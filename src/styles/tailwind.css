@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #fafafa; /* gray-50 */
+    --color-foreground: #1f2937; /* gray-800 */
+    --color-border: #e5e7eb; /* gray-200 */
+    --color-input: #ffffff; /* white */
+    --color-ring: #16a34a; /* green-600 */
+    
+    /* Card Colors */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #1f2937; /* gray-800 */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #1f2937; /* gray-800 */
+    
+    /* Muted Colors */
+    --color-muted: #f3f4f6; /* gray-100 */
+    --color-muted-foreground: #6b7280; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #16a34a; /* green-600 */
+    --color-primary-foreground: #ffffff; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #059669; /* emerald-600 */
+    --color-secondary-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #ffd700; /* gold */
+    --color-accent-foreground: #1f2937; /* gray-800 */
+    
+    /* Destructive Colors */
+    --color-destructive: #ef4444; /* red-500 */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Success Colors */
+    --color-success: #10b981; /* emerald-500 */
+    --color-success-foreground: #ffffff; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #f59e0b; /* amber-500 */
+    --color-warning-foreground: #1f2937; /* gray-800 */
+    
+    /* Error Colors */
+    --color-error: #ef4444; /* red-500 */
+    --color-error-foreground: #ffffff; /* white */
+    
+    /* Text Colors */
+    --color-text-primary: #1f2937; /* gray-800 */
+    --color-text-secondary: #6b7280; /* gray-500 */
+    
+    /* Surface Colors */
+    --color-surface: #ffffff; /* white */
+    
+    /* Brand Specific Colors */
+    --color-brand-primary: #22c55e; /* green-500 */
+    --color-brand-secondary: #1f2937; /* gray-800 */
+    --color-conversion-accent: #f59e0b; /* amber-500 */
+    --color-trust-builder: #3b82f6; /* blue-500 */
+    --color-cta: #16a34a; /* green-600 */
+    
+    /* Ranking Colors */
+    --color-gold: #ffd700; /* gold */
+    --color-silver: #c0c0c0; /* silver */
+    --color-bronze: #cd7f32; /* bronze */
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Animation utilities */
+  .animate-pulse-subtle {
+    animation: pulse-subtle 2s infinite;
+  }
+  
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+  
+  .animate-number-count {
+    animation: number-count 0.4s ease-out;
+  }
+  
+  @keyframes number-count {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .animate-ranking-reveal {
+    animation: ranking-reveal 0.3s ease-in-out;
+  }
+  
+  @keyframes ranking-reveal {
+    from { transform: translateY(8px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ranking card effects */
+  .ranking-card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ranking-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Confidence score animations */
+  .confidence-indicator {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Brand gradient backgrounds */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  }
+  
+  .bg-success-gradient {
+    background: linear-gradient(135deg, var(--color-success) 0%, var(--color-primary) 100%);
+  }
+  
+  /* Text gradients */
+  .text-brand-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Custom spacing for agricultural data */
+  .space-y-agricultural > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  /* Shadow utilities for ranking hierarchy */
+  .shadow-ranking {
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.15);
+  }
+  
+  .shadow-ranking-hover {
+    box-shadow: 0 8px 24px rgba(34, 197, 94, 0.2);
+  }
+  
+  /* Border utilities for data visualization */
+  .border-ranking-gold {
+    border-color: var(--color-gold);
+  }
+  
+  .border-ranking-silver {
+    border-color: var(--color-silver);
+  }
+  
+  .border-ranking-bronze {
+    border-color: var(--color-bronze);
+  }
+  
+  /* Text utilities */
+  .text-ranking-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+  }
+}
