@@ -18,13 +18,20 @@ const LanguageContext = createContext({
 });
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(
-    typeof window !== 'undefined' ? (localStorage.getItem('agroyield-lang') || 'en-IN') : 'en-IN'
-  );
+  const [language, setLanguage] = useState('en-IN');
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  React.useEffect(() => {
+    const savedLang = typeof window !== 'undefined' ? localStorage?.getItem('agroyield-lang') : null;
+    if (savedLang) {
+      setLanguage(savedLang);
+    }
+    setIsHydrated(true);
+  }, []);
   
   const handleSetLanguage = (code) => {
     setLanguage(code);
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && localStorage) {
       localStorage.setItem('agroyield-lang', code);
     }
   };
