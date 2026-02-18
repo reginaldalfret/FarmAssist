@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAssist - Diagnostic</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        // Log all errors to console
+        window.addEventListener('error', (event) => {
+            console.error('[ERROR]:', event.error);
+            console.error('[MESSAGE]:', event.message);
+            console.error('[STACK]:', event.error?.stack);
+        });
+        
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('[UNHANDLED REJECTION]:', event.reason);
+        });
+    </script>
+</body>
+</html>

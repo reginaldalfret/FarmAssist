@@ -259,7 +259,11 @@ const Header = () => {
       {/* Simple Auth Modal */}
       {showAuthModal && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+            <button onClick={() => setShowAuthModal(false)} 
+              className="absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-600">
+              <Icon name="X" size={20} />
+            </button>
             <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white text-center">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Icon name="User" size={32} className="text-white" />
@@ -293,7 +297,7 @@ const Header = () => {
                   <span>OTP Login</span>
                 </button>
                 <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
-                  <Icon name="Chrome" size={16} className="text-blue-600" />
+                  <Icon name="Mail" size={16} className="text-blue-600" />
                   <span>Google</span>
                 </button>
               </div>
@@ -301,10 +305,6 @@ const Header = () => {
                 New farmer? <button className="text-primary font-semibold hover:underline">Create Free Account</button>
               </p>
             </div>
-            <button onClick={() => setShowAuthModal(false)} 
-              className="absolute top-4 right-4 text-white/80 hover:text-white">
-              <Icon name="X" size={20} />
-            </button>
           </div>
         </div>
       )}
