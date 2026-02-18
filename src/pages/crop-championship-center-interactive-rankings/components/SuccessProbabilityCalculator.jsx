@@ -65,14 +65,14 @@ const SuccessProbabilityCalculator = () => {
 
   const cropOptions = [
     { value: 'all', label: 'Select Crop' },
-    { value: 'rice', label: 'Rice' },
-    { value: 'wheat', label: 'Wheat' },
-    { value: 'maize', label: 'Maize' },
-    { value: 'sugarcane', label: 'Sugarcane' },
-    { value: 'cotton', label: 'Cotton' },
+    { value: 'mustard', label: 'Mustard' },
     { value: 'soybean', label: 'Soybean' },
     { value: 'groundnut', label: 'Groundnut' },
-    { value: 'mustard', label: 'Mustard' }
+    { value: 'sunflower', label: 'Sunflower' },
+    { value: 'sesame', label: 'Sesame' },
+    { value: 'castor', label: 'Castor' },
+    { value: 'linseed', label: 'Linseed' },
+    { value: 'safflower', label: 'Safflower' }
   ];
 
   const handleInputChange = (field, value) => {

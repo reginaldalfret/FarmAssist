@@ -13,24 +13,24 @@ const HeroSection = () => {
 
   const liveRankings = [
     {
-      region: "Punjab",
-      crop: "Wheat",
+      region: "Rajasthan",
+      crop: "Mustard",
       confidence: 94,
-      expectedYield: "₹1,85,000/acre",
+      expectedYield: "₹1,95,000/acre",
       trend: "up"
     },
     {
-      region: "Maharashtra",
-      crop: "Cotton",
+      region: "Madhya Pradesh",
+      crop: "Soybean",
       confidence: 91,
-      expectedYield: "₹2,15,000/acre",
+      expectedYield: "₹1,75,000/acre",
       trend: "up"
     },
     {
-      region: "Karnataka",
-      crop: "Sugarcane",
+      region: "Gujarat",
+      crop: "Groundnut",
       confidence: 88,
-      expectedYield: "₹3,25,000/acre",
+      expectedYield: "₹2,10,000/acre",
       trend: "stable"
     }
   ];
@@ -89,7 +89,7 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
               <Icon name="Zap" size={16} />
-              <span>India's First AI Agricultural Leaderboard</span>
+              <span>India's #1 AI Oilseed Yield Optimizer</span>
             </div>
 
             {/* Main Headline */}
@@ -104,8 +104,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                Netflix-level AI meets agriculture. Get data-driven crop rankings, 
-                treatment recommendations, and join India's farming success community.
+                Data-driven oilseed crop rankings, treatment recommendations, and yield optimization — purpose-built for India's oilseed farmers.
               </p>
             </div>
 

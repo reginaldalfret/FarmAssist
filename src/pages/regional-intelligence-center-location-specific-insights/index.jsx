@@ -113,7 +113,7 @@ const RegionalIntelligenceCenter = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Regional Intelligence Center - Location-Specific Agricultural Insights | RankFarm AI</title>
+        <title>Regional Intelligence Center - Location-Specific Agricultural Insights | AgroYield AI</title>
         <meta name="description" content="Get hyper-local agricultural recommendations tailored to India's diverse farming regions. Interactive maps, climate-adapted rankings, and regional success stories." />
         <meta name="keywords" content="regional agriculture, location-specific farming, climate adaptation, soil guidance, local experts, government schemes" />
       </Helmet>
@@ -292,7 +292,7 @@ const RegionalIntelligenceCenter = () => {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-lg font-bold">RankFarm AI</div>
+                    <div className="text-lg font-bold">AgroYield AI</div>
                     <div className="text-xs text-gray-400">Regional Intelligence</div>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ const RegionalIntelligenceCenter = () => {
             </div>
             
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-              <p>&copy; {new Date()?.getFullYear()} RankFarm AI. All rights reserved. | Privacy Policy | Terms of Service</p>
+              <p>&copy; {new Date()?.getFullYear()} AgroYield AI. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
           </div>
         </footer>

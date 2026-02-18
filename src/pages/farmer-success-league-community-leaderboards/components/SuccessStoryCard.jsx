@@ -80,7 +80,7 @@ const SuccessStoryCard = ({ story }) => {
 
         <div className="border-t border-gray-100 pt-4">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-sm font-medium text-gray-700">RankFarm AI Recommendations Used:</span>
+            <span className="text-sm font-medium text-gray-700">AgroYield AI Recommendations Used:</span>
             <span className="text-sm text-primary font-semibold">{story?.recommendationsUsed}/5</span>
           </div>
           <div className="flex flex-wrap gap-2 mb-4">

@@ -8,120 +8,120 @@ const RegionalLeaderboard = () => {
     punjab: {
       name: 'Punjab',
       totalFarmers: 1250000,
-      avgYield: 68.5,
+      avgYield: 18.5,
       topCrops: [
         {
           rank: 1,
-          name: 'Basmati Rice',
+          name: 'Mustard',
           farmers: 450000,
-          avgYield: 72.3,
+          avgYield: 18.9,
           successRate: 89,
           topFarmer: 'Harpreet Singh',
           location: 'Amritsar',
-          yield: 85.2,
-          story: 'Achieved record yield using precision farming techniques'
+          yield: 21.2,
+          story: 'Achieved record oilseed yield using precision farming techniques'
         },
         {
           rank: 2,
-          name: 'Wheat',
+          name: 'Linseed',
           farmers: 380000,
-          avgYield: 65.8,
+          avgYield: 10.8,
           successRate: 85,
           topFarmer: 'Kuldeep Kaur',
           location: 'Ludhiana',
-          yield: 78.9,
-          story: 'Implemented sustainable farming practices'
+          yield: 12.9,
+          story: 'Implemented sustainable oilseed farming practices'
         },
         {
           rank: 3,
-          name: 'Cotton',
+          name: 'Sunflower',
           farmers: 220000,
-          avgYield: 45.2,
+          avgYield: 20.2,
           successRate: 78,
           topFarmer: 'Manjit Singh',
           location: 'Bathinda',
-          yield: 52.7,
-          story: 'Used integrated pest management effectively'
+          yield: 23.7,
+          story: 'Used integrated pest management for oilseed crops effectively'
         }
       ]
     },
     haryana: {
       name: 'Haryana',
       totalFarmers: 890000,
-      avgYield: 62.3,
+      avgYield: 17.3,
       topCrops: [
         {
           rank: 1,
-          name: 'Wheat',
+          name: 'Soybean',
           farmers: 420000,
-          avgYield: 68.5,
+          avgYield: 12.5,
           successRate: 87,
           topFarmer: 'Rajesh Kumar',
           location: 'Karnal',
-          yield: 82.1,
-          story: 'Pioneer in zero-tillage farming methods'
+          yield: 14.1,
+          story: 'Pioneer in precision oilseed cultivation methods'
         },
         {
           rank: 2,
-          name: 'Rice',
+          name: 'Groundnut',
           farmers: 280000,
-          avgYield: 58.9,
+          avgYield: 17.9,
           successRate: 82,
           topFarmer: 'Sunita Devi',
           location: 'Kurukshetra',
-          yield: 71.5,
-          story: 'Expert in water-efficient cultivation'
+          yield: 21.5,
+          story: 'Expert in water-efficient oilseed cultivation'
         },
         {
           rank: 3,
-          name: 'Mustard',
+          name: 'Safflower',
           farmers: 190000,
-          avgYield: 18.7,
+          avgYield: 12.7,
           successRate: 79,
           topFarmer: 'Vikram Singh',
           location: 'Hisar',
-          yield: 22.3,
-          story: 'Mastered drought-resistant varieties'
+          yield: 15.3,
+          story: 'Mastered drought-resistant oilseed varieties'
         }
       ]
     },
     maharashtra: {
       name: 'Maharashtra',
       totalFarmers: 1580000,
-      avgYield: 55.8,
+      avgYield: 16.8,
       topCrops: [
         {
           rank: 1,
-          name: 'Sugarcane',
+          name: 'Soybean',
           farmers: 320000,
-          avgYield: 875,
+          avgYield: 12.5,
           successRate: 84,
           topFarmer: 'Prakash Patil',
           location: 'Kolhapur',
-          yield: 1050,
-          story: 'Innovative drip irrigation implementation'
+          yield: 15.0,
+          story: 'Innovative drip irrigation for oilseed farming'
         },
         {
           rank: 2,
-          name: 'Cotton',
+          name: 'Sunflower',
           farmers: 450000,
-          avgYield: 38.2,
+          avgYield: 20.2,
           successRate: 76,
           topFarmer: 'Anita Deshmukh',
           location: 'Nagpur',
-          yield: 48.9,
-          story: 'Organic farming success story'
+          yield: 23.9,
+          story: 'Organic oilseed farming success story'
         },
         {
           rank: 3,
-          name: 'Soybean',
+          name: 'Groundnut',
           farmers: 380000,
-          avgYield: 12.5,
+          avgYield: 18.5,
           successRate: 73,
           topFarmer: 'Ramesh Jadhav',
           location: 'Aurangabad',
-          yield: 16.8,
-          story: 'Climate-smart agriculture advocate'
+          yield: 21.8,
+          story: 'Climate-smart oilseed agriculture advocate'
         }
       ]
     }

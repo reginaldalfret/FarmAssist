@@ -66,7 +66,7 @@ const AccuracyComparison = () => {
       location: 'Gujarat',
       crop: 'Cotton',
       improvement: '+35% yield',
-      story: 'Followed RankFarm AI recommendations for pest management and irrigation timing',
+      story: 'Followed AgroYield AI recommendations for pest management and irrigation timing',
       beforeAfter: {
         before: '12 quintals/acre',
         after: '16.2 quintals/acre'
@@ -143,7 +143,7 @@ const AccuracyComparison = () => {
             <span className="text-brand-gradient">Proven Superior</span> Performance
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Independent studies show RankFarm AI consistently outperforms traditional farming advice across all key metrics.
+            Independent studies show AgroYield AI consistently outperforms traditional farming advice across all key metrics.
           </p>
         </div>
 
@@ -201,11 +201,11 @@ const AccuracyComparison = () => {
               </div>
             </div>
 
-            {/* RankFarm AI */}
+            {/* AgroYield AI */}
             <div className="text-center">
               <div className="bg-primary/5 border-2 border-primary/20 rounded-xl p-8 mb-4">
                 <Icon name="Brain" size={48} className="text-primary mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">RankFarm AI</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">AgroYield AI</h4>
                 <div className="text-3xl font-bold text-primary mb-2">
                   {comparisonMetrics?.[selectedMetric]?.rankfarmAI}{comparisonMetrics?.[selectedMetric]?.unit}
                 </div>
@@ -283,7 +283,7 @@ const AccuracyComparison = () => {
                 <tr className="border-b border-gray-200">
                   <th className="text-left py-4 px-6 font-semibold text-gray-900">Aspect</th>
                   <th className="text-left py-4 px-6 font-semibold text-gray-600">Traditional Approach</th>
-                  <th className="text-left py-4 px-6 font-semibold text-primary">RankFarm AI</th>
+                  <th className="text-left py-4 px-6 font-semibold text-primary">AgroYield AI</th>
                   <th className="text-center py-4 px-6 font-semibold text-gray-900">Advantage</th>
                 </tr>
               </thead>

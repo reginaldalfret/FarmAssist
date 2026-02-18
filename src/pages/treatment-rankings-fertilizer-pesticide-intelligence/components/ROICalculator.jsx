@@ -15,12 +15,12 @@ const ROICalculator = () => {
   const [results, setResults] = useState(null);
 
   const cropOptions = [
-    { value: 'wheat', label: 'Wheat' },
-    { value: 'rice', label: 'Rice' },
-    { value: 'corn', label: 'Corn' },
-    { value: 'cotton', label: 'Cotton' },
-    { value: 'sugarcane', label: 'Sugarcane' },
-    { value: 'soybean', label: 'Soybean' }
+    { value: 'mustard', label: 'Mustard' },
+    { value: 'soybean', label: 'Soybean' },
+    { value: 'groundnut', label: 'Groundnut' },
+    { value: 'sunflower', label: 'Sunflower' },
+    { value: 'sesame', label: 'Sesame' },
+    { value: 'linseed', label: 'Linseed' }
   ];
 
   const handleInputChange = (field, value) => {
@@ -38,12 +38,12 @@ const ROICalculator = () => {
 
     // Mock price per quintal based on crop type
     const cropPrices = {
-      wheat: 2200,
-      rice: 2100,
-      corn: 1800,
-      cotton: 5500,
-      sugarcane: 350,
-      soybean: 4200
+      mustard: 4800,
+      soybean: 4200,
+      groundnut: 5500,
+      sunflower: 5000,
+      sesame: 6500,
+      linseed: 5200
     };
 
     const pricePerQuintal = cropPrices?.[calculatorData?.cropType] || 2000;

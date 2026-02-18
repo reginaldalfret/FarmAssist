@@ -265,7 +265,7 @@ const TreatmentRankingsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Treatment Rankings - Fertilizer & Pesticide Intelligence | RankFarm AI</title>
+        <title>Treatment Rankings - Fertilizer & Pesticide Intelligence | AgroYield AI</title>
         <meta name="description" content="Data-driven rankings of fertilizers, pesticides, fungicides, and herbicides. Compare treatments, calculate ROI, and get expert recommendations for optimal crop protection and nutrition." />
         <meta name="keywords" content="fertilizer rankings, pesticide intelligence, crop treatment, agricultural inputs, ROI calculator, expert recommendations" />
       </Helmet>
@@ -490,7 +490,7 @@ const TreatmentRankingsPage = () => {
                   <Icon name="Beaker" size={24} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-xl font-bold">RankFarm AI</span>
+                  <span className="text-xl font-bold">AgroYield AI</span>
                   <p className="text-sm text-gray-400">Treatment Intelligence</p>
                 </div>
               </div>
@@ -522,7 +522,7 @@ const TreatmentRankingsPage = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; {new Date()?.getFullYear()} RankFarm AI. All rights reserved. | Transforming agriculture through intelligent rankings.</p>
+            <p>&copy; {new Date()?.getFullYear()} AgroYield AI. All rights reserved. | Transforming agriculture through intelligent oilseed rankings.</p>
           </div>
         </div>
       </footer>

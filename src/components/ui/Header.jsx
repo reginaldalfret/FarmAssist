@@ -76,18 +76,27 @@ const Header = () => {
                   </linearGradient>
                 </defs>
                 <rect width="40" height="40" rx="8" fill="url(#logoGradient)" />
+                {/* Oil droplet shape */}
                 <path 
-                  d="M12 28V16l4-4h8l4 4v12M16 20h8M20 12v16" 
+                  d="M20 10C20 10 16 14 16 18C16 21 17.9 23 20 23C22.1 23 24 21 24 18C24 14 20 10 20 10Z" 
                   stroke="white" 
-                  strokeWidth="2" 
+                  strokeWidth="1.5" 
+                  fill="white" 
+                  opacity="0.9"
+                />
+                {/* Leaf shape */}
+                <path 
+                  d="M24 12L26 10C27 10 28 11 28 12L26 14C25 15 24 15 23 14Z" 
+                  stroke="white" 
+                  strokeWidth="1.5" 
                   fill="none"
                 />
                 <circle cx="32" cy="8" r="3" fill="var(--color-accent)" />
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">RankFarm</span>
-              <span className="text-xs font-medium text-primary -mt-1">AI</span>
+              <span className="text-xl font-bold text-gray-900">AgroYield</span>
+              <span className="text-xs font-bold text-primary -mt-1 tracking-widest">AI</span>
             </div>
           </Link>
 

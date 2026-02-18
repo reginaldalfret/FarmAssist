@@ -41,7 +41,7 @@ const AIRankingEngineMethodologyShowcase = () => {
               Experience AI-Powered Agriculture
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of farmers who have transformed their agricultural decisions with RankFarm AI's scientifically-backed recommendations.
+              Join thousands of farmers who have transformed their agricultural decisions with AgroYield AI's scientifically-backed recommendations.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -107,7 +107,7 @@ const AIRankingEngineMethodologyShowcase = () => {
                   </svg>
                 </div>
                 <div>
-                  <span className="text-lg font-bold">RankFarm AI</span>
+                  <span className="text-lg font-bold">AgroYield AI</span>
                 </div>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
@@ -144,7 +144,7 @@ const AIRankingEngineMethodologyShowcase = () => {
 
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date()?.getFullYear()} RankFarm AI. All rights reserved.
+              © {new Date()?.getFullYear()} AgroYield AI. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
               <a href="#" className="hover:text-white">Privacy Policy</a>
