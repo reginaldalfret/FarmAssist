@@ -7,6 +7,7 @@ import AlgorithmInAction from './components/AlgorithmInAction';
 import InteractiveSliders from './components/InteractiveSliders';
 import TrustBuilding from './components/TrustBuilding';
 import AccuracyComparison from './components/AccuracyComparison';
+import CropGrowthSimulation from './components/CropGrowthSimulation';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
 
@@ -28,6 +29,8 @@ const AIRankingEngineMethodologyShowcase = () => {
       <AlgorithmInAction />
       {/* Interactive Customization Sliders */}
       <InteractiveSliders />
+      {/* Crop Growth Simulation */}
+      <CropGrowthSimulation />
       {/* Trust Building Elements */}
       <TrustBuilding />
       {/* Accuracy Comparison */}
