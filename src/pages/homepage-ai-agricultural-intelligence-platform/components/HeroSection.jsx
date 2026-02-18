@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
+import { useTranslation } from '../../../i18n/useTranslation';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const [currentRanking, setCurrentRanking] = useState(0);
   const [animatedNumbers, setAnimatedNumbers] = useState({
     yieldIncrease: 0,
@@ -89,7 +91,7 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
               <Icon name="Zap" size={16} />
-              <span>India's #1 AI Oilseed Yield Optimizer</span>
+              <span>{t('hero_badge', "India's #1 AI Oilseed Yield Optimizer")}</span>
             </div>
 
             {/* Main Headline */}
@@ -114,19 +116,19 @@ const HeroSection = () => {
                 <div className="text-3xl font-bold text-primary animate-number-count">
                   {animatedNumbers?.yieldIncrease}%
                 </div>
-                <div className="text-sm text-gray-600">Avg Yield Increase</div>
+                <div className="text-sm text-gray-600">{t('stat_yield', 'Avg Yield Increase')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary animate-number-count">
                   {animatedNumbers?.farmers?.toLocaleString('en-IN')}+
                 </div>
-                <div className="text-sm text-gray-600">Farmers Trust Us</div>
+                <div className="text-sm text-gray-600">{t('stat_farmers', 'Farmers Trust Us')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary animate-number-count">
                   {animatedNumbers?.accuracy}%
                 </div>
-                <div className="text-sm text-gray-600">Prediction Accuracy</div>
+                <div className="text-sm text-gray-600">{t('stat_accuracy', 'Prediction Accuracy')}</div>
               </div>
             </div>
 
@@ -139,7 +141,7 @@ const HeroSection = () => {
                 iconPosition="left"
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold"
               >
-                Get Free Farm Assessment
+                {t('btn_assessment_hero', 'Get Free Farm Assessment')}
               </Button>
               
               <Link to="/ai-ranking-engine-methodology-showcase">
@@ -150,7 +152,7 @@ const HeroSection = () => {
                   iconPosition="left"
                   className="border-primary text-primary hover:bg-primary/5 px-8 py-4 text-lg font-semibold w-full sm:w-auto"
                 >
-                  See How AI Works
+                  {t('btn_how_ai', 'See How AI Works')}
                 </Button>
               </Link>
             </div>
@@ -159,11 +161,11 @@ const HeroSection = () => {
             <div className="flex items-center space-x-6 pt-4">
               <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <Icon name="Shield" size={16} className="text-primary" />
-                <span>Government Approved</span>
+                <span>{t('trust_govt', 'Government Approved')}</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <Icon name="Award" size={16} className="text-primary" />
-                <span>University Validated</span>
+                <span>{t('trust_uni', 'University Validated')}</span>
               </div>
             </div>
           </div>
@@ -175,8 +177,8 @@ const HeroSection = () => {
               <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-xl font-bold">Live Rankings</h3>
-                    <p className="text-green-100 text-sm">Updated every 15 minutes</p>
+                    <h3 className="text-xl font-bold">{t('live_rankings', 'Live Rankings')}</h3>
+                    <p className="text-green-100 text-sm">{t('live_updated', 'Updated every 15 minutes')}</p>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></div>

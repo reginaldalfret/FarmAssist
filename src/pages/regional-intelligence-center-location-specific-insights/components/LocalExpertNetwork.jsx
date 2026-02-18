@@ -334,19 +334,27 @@ const LocalExpertNetwork = () => {
                 {/* Contact Options */}
                 <div className="flex items-center justify-between pt-3 border-t border-gray-200">
                   <div className="flex space-x-2">
-                    <button className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition-colors">
+                    <a 
+                      href={`https://wa.me/${expert?.contact?.whatsapp?.replace(/[^0-9]/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition-colors">
                       <Icon name="MessageCircle" size={14} />
                       <span>WhatsApp</span>
-                    </button>
-                    <button className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors">
+                    </a>
+                    <a 
+                      href={`tel:${expert?.contact?.phone}`}
+                      className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors">
                       <Icon name="Phone" size={14} />
                       <span>Call</span>
-                    </button>
+                    </a>
                   </div>
-                  <button className="flex items-center space-x-1 px-3 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
-                    <Icon name="Calendar" size={14} />
-                    <span>Book</span>
-                  </button>
+                  <a 
+                    href={`mailto:${expert?.contact?.email}?subject=Consultation Request - AgroYield AI&body=Hello ${expert?.name}, I found your profile on AgroYield AI and would like to request a consultation for oilseed crop guidance.`}
+                    className="flex items-center space-x-1 px-3 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
+                    <Icon name="Mail" size={14} />
+                    <span>Email</span>
+                  </a>
                 </div>
               </div>
             </div>

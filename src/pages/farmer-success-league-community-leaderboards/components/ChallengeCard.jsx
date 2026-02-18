@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const ChallengeCard = ({ challenge }) => {
+  const [hasJoined, setHasJoined] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleJoin = () => {
+    if (challenge?.status !== 'active') return;
+    setHasJoined(true);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 3000);
+  };
   const getStatusColor = (status) => {
     switch (status) {
       case 'active':
@@ -111,6 +120,12 @@ const ChallengeCard = ({ challenge }) => {
           ))}
         </div>
         
+        {showSuccess && (
+          <div className="mb-3 p-3 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2">
+            <Icon name="CheckCircle" size={16} className="text-green-600" />
+            <span className="text-sm text-green-700 font-medium">Successfully joined! Track progress in your dashboard.</span>
+          </div>
+        )}
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4 text-sm text-gray-500">
             <div className="flex items-center space-x-1">
@@ -125,14 +140,16 @@ const ChallengeCard = ({ challenge }) => {
             )}
           </div>
           <Button
-            variant={challenge?.status === 'active' ? 'default' : 'outline'}
+            variant="default"
             size="sm"
-            disabled={challenge?.status === 'completed' || challenge?.currentParticipants >= challenge?.maxParticipants}
-            iconName={challenge?.status === 'active' ? 'Play' : challenge?.status === 'upcoming' ? 'Bell' : 'Check'}
+            iconName={hasJoined ? "CheckCircle" : (challenge?.status === 'active' ? "Play" : "Clock")}
             iconPosition="left"
+            onClick={handleJoin}
+            disabled={challenge?.status !== 'active' || hasJoined || challenge?.currentParticipants >= challenge?.maxParticipants}
+            className={`${hasJoined ? 'bg-green-500' : ''}`}
           >
-            {challenge?.status === 'active' ? 'Join Challenge' : 
-             challenge?.status === 'upcoming' ? 'Notify Me' : 'Completed'}
+            {hasJoined ? 'Joined ✓' : challenge?.status === 'active' ? 'Join Challenge' : 
+             challenge?.status === 'upcoming' ? 'Notify Me' : 'View Results'}
           </Button>
         </div>
       </div>
