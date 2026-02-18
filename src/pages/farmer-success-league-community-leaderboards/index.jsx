@@ -206,7 +206,7 @@ const FarmerSuccessLeague = () => {
     {
       id: 1,
       title: "Winter Crop Optimization Challenge",
-      description: "Maximize your Rabi season yield using AI-recommended practices. Focus on wheat, mustard, or gram cultivation with sustainable methods.",
+      description: "Maximize your Rabi season yield using AI-recommended practices. Focus on mustard, linseed, or safflower oilseed cultivation with sustainable methods.",
       icon: "Snowflake",
       status: "active",
       difficulty: "Medium",

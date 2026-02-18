@@ -5,7 +5,7 @@ import Select from '../../../components/ui/Select';
 const ComparisonTool = () => {
   const [selectedRegion, setSelectedRegion] = useState('maharashtra');
   const [selectedFarmSize, setSelectedFarmSize] = useState('2-5');
-  const [selectedCrop, setSelectedCrop] = useState('wheat');
+  const [selectedCrop, setSelectedCrop] = useState('mustard');
 
   const regionOptions = [
     { value: 'maharashtra', label: 'Maharashtra' },
@@ -23,11 +23,11 @@ const ComparisonTool = () => {
   ];
 
   const cropOptions = [
-    { value: 'wheat', label: 'Wheat' },
-    { value: 'rice', label: 'Rice' },
-    { value: 'cotton', label: 'Cotton' },
-    { value: 'sugarcane', label: 'Sugarcane' },
-    { value: 'soybean', label: 'Soybean' }
+    { value: 'mustard', label: 'Mustard' },
+    { value: 'soybean', label: 'Soybean' },
+    { value: 'groundnut', label: 'Groundnut' },
+    { value: 'sunflower', label: 'Sunflower' },
+    { value: 'sesame', label: 'Sesame' }
   ];
 
   // Mock comparison data

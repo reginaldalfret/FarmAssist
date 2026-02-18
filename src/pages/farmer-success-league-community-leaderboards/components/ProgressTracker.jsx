@@ -91,7 +91,7 @@ const ProgressTracker = () => {
       id: 1,
       title: "First AgroYield AI Recommendation",
       date: "March 2021",
-      description: "Started using AI-recommended wheat variety",
+      description: "Started using AI-recommended mustard (Pusa Bold) variety",
       icon: "Lightbulb",
       achieved: true
     },

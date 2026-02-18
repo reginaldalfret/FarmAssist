@@ -69,26 +69,26 @@ const RegionalIntelligenceCenter = () => {
 
   const quickInsights = [
     {
-      region: 'Punjab',
-      insight: 'Wheat yields increased by 35% using climate-adapted varieties',
+      region: 'Rajasthan',
+      insight: 'Mustard yields up 38% using AI-recommended Pusa Bold variety',
       confidence: 94,
-      icon: 'Wheat'
+      icon: 'Leaf'
     },
     {
-      region: 'Maharashtra',
-      insight: 'Cotton farmers saved ₹25,000/ha with integrated pest management',
+      region: 'Madhya Pradesh',
+      insight: 'Soybean farmers saved ₹28,000/ha with AI pest management',
       confidence: 91,
       icon: 'Leaf'
     },
     {
       region: 'Gujarat',
-      insight: 'Drip irrigation adoption led to 40% water savings',
+      insight: 'Drip irrigation adoption led to 40% water savings in groundnut',
       confidence: 89,
       icon: 'Droplets'
     },
     {
       region: 'Karnataka',
-      insight: 'Organic certification increased coffee prices by 60%',
+      insight: 'Sunflower oil premium certification increased income by 55%',
       confidence: 87,
       icon: 'Award'
     }

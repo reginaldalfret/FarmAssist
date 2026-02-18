@@ -138,8 +138,8 @@ const GovernmentSchemeIntegration = () => {
       type: 'State Scheme',
       description: 'Encourages farmers to shift from paddy cultivation to alternative crops to conserve groundwater and improve soil health.',
       benefits: [
-        '₹17,500 per acre for maize cultivation',
-        '₹15,000 per acre for cotton cultivation',
+        '₹18,000 per acre for mustard/rapeseed cultivation',
+        '₹16,000 per acre for soybean cultivation',
         'Free seeds and technical support',
         'Assured procurement at MSP'
       ],
