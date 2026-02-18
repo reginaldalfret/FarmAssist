@@ -22,7 +22,7 @@ const RegionalSuccessStories = () => {
       year: '2024',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
       farmImage: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&h=250&fit=crop',
-      testimonial: `Following RankFarm AI's recommendations for soil-specific fertilizer application and optimal planting timing, I achieved the highest yield in my 20-year farming career. The climate-adapted rankings helped me choose the perfect Basmati variety for our region's monsoon patterns.`,
+      testimonial: `Following AgroYield AI's recommendations for soil-specific fertilizer application and optimal planting timing, I achieved the highest yield in my 20-year farming career. The climate-adapted rankings helped me choose the perfect Basmati variety for our region's monsoon patterns.`,
       techniques: ['Precision Fertilization', 'Climate-Timed Planting', 'Water Management'],
       verified: true
     },

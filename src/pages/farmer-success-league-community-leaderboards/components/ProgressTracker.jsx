@@ -89,7 +89,7 @@ const ProgressTracker = () => {
   const milestones = [
     {
       id: 1,
-      title: "First RankFarm AI Recommendation",
+      title: "First AgroYield AI Recommendation",
       date: "March 2021",
       description: "Started using AI-recommended wheat variety",
       icon: "Lightbulb",

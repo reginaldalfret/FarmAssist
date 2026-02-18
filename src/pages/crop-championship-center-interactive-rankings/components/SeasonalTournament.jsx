@@ -8,33 +8,33 @@ const SeasonalTournament = ({ selectedSeason, onSeasonChange }) => {
       period: 'Jun - Oct 2024',
       icon: 'CloudRain',
       color: 'bg-blue-500',
-      description: 'Monsoon season crops',
+      description: 'Monsoon season oilseed crops',
       activeRegions: 28,
       totalCrops: 45,
-      leadingCrop: 'Rice',
-      leadingYield: '65.2 Q/Ha'
+      leadingCrop: 'Soybean',
+      leadingYield: '12.5 Q/Ha'
     },
     {
       season: 'Rabi',
       period: 'Nov - Apr 2025',
       icon: 'Sun',
       color: 'bg-orange-500',
-      description: 'Winter season crops',
+      description: 'Winter season oilseed crops',
       activeRegions: 32,
       totalCrops: 38,
-      leadingCrop: 'Wheat',
-      leadingYield: '48.7 Q/Ha'
+      leadingCrop: 'Mustard',
+      leadingYield: '18.9 Q/Ha'
     },
     {
       season: 'Zaid',
       period: 'May - Aug 2024',
       icon: 'Thermometer',
       color: 'bg-red-500',
-      description: 'Summer season crops',
+      description: 'Summer season oilseed crops',
       activeRegions: 18,
       totalCrops: 22,
-      leadingCrop: 'Watermelon',
-      leadingYield: '285 Q/Ha'
+      leadingCrop: 'Groundnut',
+      leadingYield: '18.7 Q/Ha'
     }
   ];
 

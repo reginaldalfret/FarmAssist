@@ -68,7 +68,7 @@ const HeroVisualization = () => {
               How Our <span className="text-brand-gradient">AI Rankings</span> Work
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Discover the science behind RankFarm AI's sophisticated algorithms that transform complex agricultural data into simple, actionable rankings.
+              Discover the science behind AgroYield AI's sophisticated algorithms that transform complex agricultural data into simple, actionable rankings.
             </p>
           </div>
 

@@ -11,43 +11,43 @@ const SuccessStories = () => {
       id: 1,
       name: "Rajesh Kumar",
       location: "Ludhiana, Punjab",
-      crop: "Wheat",
+      crop: "Mustard",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       beforeYield: "₹1,20,000",
       afterYield: "₹1,85,000",
       improvement: "54%",
       timeframe: "2023-24 Season",
-      story: `Following RankFarm AI's wheat recommendations transformed my farming completely. The AI suggested optimal seeding time and fertilizer combinations that I never considered before.\n\nThe confidence score of 94% gave me the courage to invest in better seeds and follow the treatment schedule exactly as recommended.`,
+      story: `Following AgroYield AI's mustard recommendations transformed my farming completely. The AI suggested optimal seeding time and fertilizer combinations that I never considered before.\n\nThe confidence score of 94% gave me the courage to invest in better seeds and follow the treatment schedule exactly as recommended.`,
       achievements: ["Best Yield in District", "54% Profit Increase", "Reduced Input Costs by 15%"],
-      ranking: "#1 Wheat Farmer - Punjab Region"
+      ranking: "#1 Mustard Farmer - Punjab Region"
     },
     {
       id: 2,
       name: "Priya Sharma",
       location: "Nashik, Maharashtra",
-      crop: "Cotton",
+      crop: "Sunflower",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       beforeYield: "₹1,45,000",
       afterYield: "₹2,15,000",
       improvement: "48%",
       timeframe: "2023 Kharif Season",
-      story: `As a woman farmer, I was initially skeptical about AI recommendations. But the transparent ranking system and scientific backing convinced me to try.\n\nThe pest management schedule and irrigation timing suggestions were game-changers. My cotton quality improved significantly, fetching premium prices in the market.`,
-      achievements: ["Premium Cotton Grade A", "48% Revenue Growth", "Community Recognition"],
-      ranking: "#2 Cotton Farmer - Maharashtra Region"
+      story: `As a woman farmer, I was initially skeptical about AI recommendations. But the transparent ranking system and scientific backing convinced me to try.\n\nThe pest management schedule and irrigation timing suggestions were game-changers. My sunflower oil yield improved significantly, fetching premium prices in the market.`,
+      achievements: ["Premium Sunflower Oil", "48% Revenue Growth", "Community Recognition"],
+      ranking: "#2 Sunflower Farmer - Maharashtra Region"
     },
     {
       id: 3,
       name: "Suresh Patel",
       location: "Anand, Gujarat",
-      crop: "Sugarcane",
+      crop: "Groundnut",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       beforeYield: "₹2,80,000",
       afterYield: "₹3,25,000",
       improvement: "16%",
       timeframe: "2023-24 Annual Cycle",
-      story: `RankFarm AI's sugarcane recommendations helped me optimize my 15-acre farm like never before. The soil analysis integration and weather-based scheduling were incredibly accurate.\n\nWhat impressed me most was the market price predictions that helped me time my harvest perfectly for maximum profit.`,
-      achievements: ["Highest Sugar Content", "16% Yield Increase", "Early Harvest Bonus"],
-      ranking: "#1 Sugarcane Farmer - Gujarat Region"
+      story: `AgroYield AI's groundnut recommendations helped me optimize my 15-acre farm like never before. The soil analysis integration and weather-based scheduling were incredibly accurate.\n\nWhat impressed me most was the market price predictions that helped me time my harvest perfectly for maximum profit.`,
+      achievements: ["Highest Oil Content", "16% Yield Increase", "Early Harvest Bonus"],
+      ranking: "#1 Groundnut Farmer - Gujarat Region"
     }
   ];
 

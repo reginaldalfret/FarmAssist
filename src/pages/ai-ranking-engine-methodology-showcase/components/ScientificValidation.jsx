@@ -9,7 +9,7 @@ const ScientificValidation = () => {
       name: 'Indian Agricultural Research Institute (IARI)',
       location: 'New Delhi',
       logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop&crop=center',
-      endorsement: `"RankFarm AI's methodology represents a significant advancement in agricultural decision support systems. Their multi-criteria ranking approach aligns perfectly with scientific agricultural practices."`,
+      endorsement: `"AgroYield AI's methodology represents a significant advancement in agricultural decision support systems. Their multi-criteria ranking approach aligns perfectly with scientific agricultural practices."`,
       scientist: 'Dr. Rajesh Kumar',
       designation: 'Director, Crop Science Division',
       collaboration: 'Algorithm Validation Partner'
@@ -29,7 +29,7 @@ const ScientificValidation = () => {
       name: 'Tamil Nadu Agricultural University',
       location: 'Coimbatore',
       logo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=center',
-      endorsement: `"RankFarm AI's transparent approach to algorithm explanation builds trust among farmers. The confidence scoring system is particularly innovative."`,
+      endorsement: `"AgroYield AI's transparent approach to algorithm explanation builds trust among farmers. The confidence scoring system is particularly innovative."`,
       scientist: 'Dr. Suresh Babu',
       designation: 'Professor, Agricultural Informatics',
       collaboration: 'Research Validation Partner'

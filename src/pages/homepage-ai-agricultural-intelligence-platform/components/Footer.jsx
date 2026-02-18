@@ -58,31 +58,40 @@ const Footer = () => {
                     </linearGradient>
                   </defs>
                   <rect width="40" height="40" rx="8" fill="url(#footerLogoGradient)" />
+                  {/* Oil droplet shape */}
                   <path 
-                    d="M12 28V16l4-4h8l4 4v12M16 20h8M20 12v16" 
+                    d="M20 10C20 10 16 14 16 18C16 21 17.9 23 20 23C22.1 23 24 21 24 18C24 14 20 10 20 10Z" 
                     stroke="white" 
-                    strokeWidth="2" 
+                    strokeWidth="1.5" 
+                    fill="white" 
+                    opacity="0.9"
+                  />
+                  {/* Leaf shape */}
+                  <path 
+                    d="M24 12L26 10C27 10 28 11 28 12L26 14C25 15 24 15 23 14Z" 
+                    stroke="white" 
+                    strokeWidth="1.5" 
                     fill="none"
                   />
                   <circle cx="32" cy="8" r="3" fill="var(--color-accent)" />
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-white">RankFarm</span>
-                <span className="text-sm font-medium text-primary -mt-1">AI</span>
+                <span className="text-2xl font-bold text-white">AgroYield</span>
+                <span className="text-sm font-bold text-primary -mt-1 tracking-widest">AI</span>
               </div>
             </Link>
 
             {/* Description */}
             <p className="text-gray-300 leading-relaxed max-w-md">
-              India's first AI-powered agricultural leaderboard platform. Transform farming uncertainty into confident decisions with data-driven crop rankings and community success insights.
+              India's most advanced AI platform for oilseed crop yield optimization. Transform farming uncertainty into confident decisions with data-driven rankings and oilseed-specific insights.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Icon name="Mail" size={18} className="text-primary" />
-                <span>support@rankfarm.ai</span>
+                <span>support@agroyield.ai</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Icon name="Phone" size={18} className="text-primary" />
@@ -206,7 +215,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400 text-sm">
-              <span>© {currentYear} RankFarm AI. All rights reserved.</span>
+              <span>© {currentYear} AgroYield AI. All rights reserved. Empowering farmers with intelligent oilseed crop rankings.</span>
               <div className="flex items-center space-x-6">
                 <Link to="#" className="hover:text-primary transition-colors duration-200">Privacy Policy</Link>
                 <Link to="#" className="hover:text-primary transition-colors duration-200">Terms of Service</Link>

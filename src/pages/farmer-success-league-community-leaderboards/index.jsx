@@ -23,7 +23,7 @@ const FarmerSuccessLeague = () => {
       name: "Rajesh Kumar",
       location: "Pune, Maharashtra",
       farmSize: 5.2,
-      primaryCrop: "Wheat",
+      primaryCrop: "Mustard",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       overallScore: 94,
       yieldPerHectare: 5200,
@@ -41,7 +41,7 @@ const FarmerSuccessLeague = () => {
       name: "Priya Sharma",
       location: "Ludhiana, Punjab",
       farmSize: 3.8,
-      primaryCrop: "Rice",
+      primaryCrop: "Soybean",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       overallScore: 91,
       yieldPerHectare: 4800,
@@ -58,7 +58,7 @@ const FarmerSuccessLeague = () => {
       name: "Amit Patel",
       location: "Ahmedabad, Gujarat",
       farmSize: 7.1,
-      primaryCrop: "Cotton",
+      primaryCrop: "Sunflower",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       overallScore: 89,
       yieldPerHectare: 4600,
@@ -92,7 +92,7 @@ const FarmerSuccessLeague = () => {
       name: "Vikram Singh",
       location: "Chandigarh, Punjab",
       farmSize: 4.3,
-      primaryCrop: "Wheat",
+      primaryCrop: "Mustard",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
       overallScore: 85,
       yieldPerHectare: 4200,
@@ -110,7 +110,7 @@ const FarmerSuccessLeague = () => {
     {
       id: 1,
       name: "First Season Success",
-      description: "Successfully completed your first season using RankFarm AI recommendations with positive results",
+      description: "Successfully completed your first season using AgroYield AI recommendations with positive results",
       icon: "Seedling",
       type: "gold",
       earnedDate: "March 2024",
@@ -157,7 +157,7 @@ const FarmerSuccessLeague = () => {
   const mockSuccessStories = [
     {
       id: 1,
-      title: "From Traditional to Tech-Driven: A 40% Yield Increase Journey",
+      title: "From Traditional to Tech-Driven: A 40% Soybean Yield Increase Journey",
       farmerName: "Ramesh Gupta",
       location: "Indore, Madhya Pradesh",
       farmSize: 6.2,
@@ -165,21 +165,21 @@ const FarmerSuccessLeague = () => {
       farmerAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
       category: "Yield Improvement",
       yieldIncrease: 40,
-      yieldBefore: 3200,
-      yieldAfter: 4480,
+      yieldBefore: 8.2,
+      yieldAfter: 11.5,
       profitIncrease: 55,
       additionalProfit: 180000,
       season: "Kharif 2024",
       timeframe: "6 months",
       likes: 234,
-      description: "Ramesh transformed his traditional farming approach by adopting RankFarm AI recommendations, focusing on precision agriculture and data-driven decisions.",
-      fullDescription: `Ramesh Gupta's journey from traditional farming to tech-driven agriculture is a testament to the power of data-driven decisions. Starting with skepticism about AI recommendations, Ramesh gradually adopted RankFarm AI suggestions for crop selection, fertilizer application, and pest management.\n\nThe transformation began with small changes - switching to recommended wheat varieties and adjusting planting schedules based on weather predictions. Within the first season, he noticed improved germination rates and healthier crop growth.\n\nBy the second season, Ramesh had fully embraced the platform's recommendations, including precision fertilizer application and integrated pest management strategies. The results were remarkable - a 40% increase in yield and 55% improvement in profit margins.\n\nToday, Ramesh is not just a successful farmer but also a community leader, sharing his knowledge with neighboring farmers and encouraging them to adopt technology-driven farming practices.`,
+      description: "Ramesh transformed his traditional farming approach by adopting AgroYield AI recommendations for oilseed crops, focusing on precision agriculture and data-driven decisions.",
+      fullDescription: `Ramesh Gupta's journey from traditional farming to tech-driven agriculture is a testament to the power of data-driven decisions. Starting with skepticism about AI recommendations, Ramesh gradually adopted AgroYield AI suggestions for oilseed crop selection, fertilizer application, and pest management.\n\nThe transformation began with small changes - switching to recommended soybean varieties and adjusting planting schedules based on weather predictions. Within the first season, he noticed improved germination rates and healthier crop growth.\n\nBy the second season, Ramesh had fully embraced the platform's recommendations, including precision fertilizer application and integrated pest management strategies for oilseeds. The results were remarkable - a 40% increase in yield and 55% improvement in profit margins.\n\nToday, Ramesh is not just a successful farmer but also a community leader, sharing his knowledge with neighboring farmers and encouraging them to adopt technology-driven oilseed farming practices.`,
       recommendationsUsed: 5,
-      recommendations: ["High-yield wheat variety", "Precision fertilizer timing", "IPM pest control", "Weather-based irrigation", "Soil health monitoring"]
+      recommendations: ["High-yield soybean variety", "Precision fertilizer timing", "IPM pest control", "Weather-based irrigation", "Soil health monitoring"]
     },
     {
       id: 2,
-      title: "Sustainable Cotton Farming: Balancing Profit and Environment",
+      title: "Sustainable Sunflower Farming: Balancing Profit and Environment",
       farmerName: "Kavita Desai",
       location: "Nagpur, Maharashtra",
       farmSize: 4.8,
@@ -187,15 +187,15 @@ const FarmerSuccessLeague = () => {
       farmerAvatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
       category: "Sustainability",
       yieldIncrease: 25,
-      yieldBefore: 2800,
-      yieldAfter: 3500,
+      yieldBefore: 16.2,
+      yieldAfter: 20.3,
       profitIncrease: 35,
       additionalProfit: 125000,
       season: "Kharif 2024",
       timeframe: "8 months",
       likes: 189,
-      description: "Kavita successfully balanced environmental sustainability with profitability using RankFarm AI\'s eco-friendly recommendations.",
-      fullDescription: `Kavita Desai's cotton farm in Nagpur faced the challenge of maintaining profitability while adopting sustainable practices. With increasing environmental concerns and market demand for sustainable cotton, she turned to RankFarm AI for guidance.\n\nThe platform recommended organic fertilizers, biological pest control methods, and water-efficient irrigation techniques. Initially concerned about potential yield losses, Kavita was pleasantly surprised by the results.\n\nNot only did her cotton yield increase by 25%, but she also achieved premium pricing for her sustainably grown cotton. The reduced chemical inputs lowered her costs while improving soil health for future seasons.\n\nKavita's success story demonstrates that sustainability and profitability can go hand in hand with the right guidance and technology.`,
+      description: "Kavita successfully balanced environmental sustainability with profitability using AgroYield AI\'s eco-friendly oilseed recommendations.",
+      fullDescription: `Kavita Desai's sunflower farm in Nagpur faced the challenge of maintaining profitability while adopting sustainable practices. With increasing environmental concerns and market demand for sustainable oilseed crops, she turned to AgroYield AI for guidance.\n\nThe platform recommended organic fertilizers, biological pest control methods, and water-efficient irrigation techniques for sunflower cultivation. Initially concerned about potential yield losses, Kavita was pleasantly surprised by the results.\n\nNot only did her sunflower yield increase by 25%, but she also achieved premium pricing for her sustainably grown oilseed. The reduced chemical inputs lowered her costs while improving soil health for future seasons.\n\nKavita's success story demonstrates that sustainability and profitability can go hand in hand with the right guidance and technology in oilseed farming.`,
       recommendationsUsed: 4,
       recommendations: ["Organic fertilizer blend", "Biological pest control", "Drip irrigation system", "Cover crop rotation"]
     }
@@ -469,7 +469,7 @@ const FarmerSuccessLeague = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">Farmer Success Stories</h3>
-                    <p className="text-gray-600">Real transformations powered by RankFarm AI</p>
+                    <p className="text-gray-600">Real transformations powered by AgroYield AI</p>
                   </div>
                 </div>
                 <Button variant="outline" iconName="Plus" iconPosition="left">
@@ -670,7 +670,7 @@ const FarmerSuccessLeague = () => {
                     <Icon name="Users" size={20} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">RankFarm AI</h3>
+                    <h3 className="text-xl font-bold">AgroYield AI</h3>
                     <p className="text-sm text-gray-400">Success League</p>
                   </div>
                 </div>
@@ -713,7 +713,7 @@ const FarmerSuccessLeague = () => {
             
             <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
               <p className="text-sm text-gray-400">
-                © {new Date()?.getFullYear()} RankFarm AI. All rights reserved.
+                © {new Date()?.getFullYear()} AgroYield AI. All rights reserved.
               </p>
               <div className="flex items-center space-x-6 mt-4 md:mt-0">
                 <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a>

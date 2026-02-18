@@ -58,7 +58,7 @@ const TrustIndicators = () => {
       name: "Dr. Rajesh Aggarwal",
       title: "Former Director, IARI",
       avatar: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=80&h=80&fit=crop&crop=face",
-      quote: "RankFarm AI's methodology represents a significant advancement in precision agriculture. Their ranking system is scientifically sound and practically applicable.",
+      quote: "AgroYield AI's methodology represents a significant advancement in oilseed crop optimization. Their ranking system is scientifically sound and practically applicable.",
       expertise: "Crop Science & Agricultural Research"
     },
     {
@@ -72,7 +72,7 @@ const TrustIndicators = () => {
       name: "Prof. Suresh Kumar",
       title: "Dean, College of Agriculture",
       avatar: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=80&h=80&fit=crop&crop=face",
-      quote: "As an educator, I'm impressed by how RankFarm AI makes complex agricultural science accessible to farmers. The transparency in their ranking methodology is commendable.",
+      quote: "As an educator, I'm impressed by how AgroYield AI makes complex oilseed science accessible to farmers. The transparency in their ranking methodology is commendable.",
       expertise: "Agricultural Education & Extension"
     }
   ];
@@ -85,7 +85,7 @@ const TrustIndicators = () => {
     },
     {
       publication: "Economic Times",
-      headline: "RankFarm AI Wins Best AgTech Innovation Award",
+      headline: "AgroYield AI Wins Best Oilseed AgTech Innovation Award",
       date: "February 2024"
     },
     {
