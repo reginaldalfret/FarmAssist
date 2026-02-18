@@ -7,6 +7,8 @@ import LanguageSelector from '../LanguageSelector';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [showAssessmentToast, setShowAssessmentToast] = useState(false);
   const location = useLocation();
 
   const primaryNavItems = [
@@ -162,6 +164,7 @@ const Header = () => {
             <Button 
               variant="outline" 
               size="sm"
+              onClick={() => setShowAuthModal(true)}
               className="text-gray-600 border-gray-300 hover:border-primary hover:text-primary"
             >
               Sign In
@@ -171,6 +174,11 @@ const Header = () => {
               size="sm"
               iconName="Zap"
               iconPosition="left"
+              onClick={() => { 
+                setShowAssessmentToast(true); 
+                setTimeout(() => setShowAssessmentToast(false), 4000);
+                window.location.href = '/crop-championship-center-interactive-rankings';
+              }}
               className="bg-primary hover:bg-primary/90"
             >
               Get Free Assessment
@@ -209,6 +217,7 @@ const Header = () => {
                 <Button 
                   variant="outline" 
                   fullWidth
+                  onClick={() => setShowAuthModal(true)}
                   className="justify-center text-gray-600 border-gray-300"
                 >
                   Sign In
@@ -218,6 +227,11 @@ const Header = () => {
                   fullWidth
                   iconName="Zap"
                   iconPosition="left"
+                  onClick={() => { 
+                    setShowAssessmentToast(true); 
+                    setTimeout(() => setShowAssessmentToast(false), 4000);
+                    window.location.href = '/crop-championship-center-interactive-rankings';
+                  }}
                   className="justify-center bg-primary hover:bg-primary/90"
                 >
                   Get Free Assessment
@@ -240,6 +254,59 @@ const Header = () => {
           className="fixed inset-0 z-40"
           onClick={() => setIsMoreMenuOpen(false)}
         />
+      )}
+
+      {/* Simple Auth Modal */}
+      {showAuthModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+            <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Icon name="User" size={32} className="text-white" />
+              </div>
+              <h2 className="text-2xl font-bold">Welcome to AgroYield AI</h2>
+              <p className="text-white/80 text-sm mt-1">Sign in to save your farm data and track progress</p>
+            </div>
+            <div className="p-6 space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email or Phone</label>
+                <input type="text" placeholder="Enter email or 10-digit mobile number"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                <input type="password" placeholder="Enter your password"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" />
+              </div>
+              <button 
+                onClick={() => { setShowAuthModal(false); }}
+                className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                Sign In
+              </button>
+              <div className="relative text-center">
+                <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
+                <span className="relative bg-white px-3 text-sm text-gray-500">or continue with</span>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+                  <Icon name="Phone" size={16} className="text-green-600" />
+                  <span>OTP Login</span>
+                </button>
+                <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+                  <Icon name="Chrome" size={16} className="text-blue-600" />
+                  <span>Google</span>
+                </button>
+              </div>
+              <p className="text-center text-sm text-gray-500">
+                New farmer? <button className="text-primary font-semibold hover:underline">Create Free Account</button>
+              </p>
+            </div>
+            <button onClick={() => setShowAuthModal(false)} 
+              className="absolute top-4 right-4 text-white/80 hover:text-white">
+              <Icon name="X" size={20} />
+            </button>
+          </div>
+        </div>
       )}
     </header>
   );
