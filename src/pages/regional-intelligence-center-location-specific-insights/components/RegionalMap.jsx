@@ -12,7 +12,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 94,
       farmers: 1250000,
       avgYield: 4.8,
-      topCrop: 'Wheat'
+      topCrop: 'Mustard'
     },
     {
       id: 'haryana',
@@ -21,7 +21,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 91,
       farmers: 890000,
       avgYield: 4.5,
-      topCrop: 'Rice'
+      topCrop: 'Mustard'
     },
     {
       id: 'uttar-pradesh',
@@ -30,7 +30,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 88,
       farmers: 2340000,
       avgYield: 4.2,
-      topCrop: 'Sugarcane'
+      topCrop: 'Linseed'
     },
     {
       id: 'maharashtra',
@@ -39,7 +39,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 86,
       farmers: 1890000,
       avgYield: 3.9,
-      topCrop: 'Cotton'
+      topCrop: 'Soybean'
     },
     {
       id: 'karnataka',
@@ -48,7 +48,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 84,
       farmers: 1120000,
       avgYield: 3.7,
-      topCrop: 'Ragi'
+      topCrop: 'Sunflower'
     },
     {
       id: 'gujarat',
@@ -57,7 +57,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
       cropScore: 89,
       farmers: 980000,
       avgYield: 4.1,
-      topCrop: 'Cotton'
+      topCrop: 'Groundnut'
     }
   ];
 

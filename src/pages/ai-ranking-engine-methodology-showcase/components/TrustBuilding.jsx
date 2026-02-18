@@ -53,14 +53,14 @@ const TrustBuilding = () => {
       range: '90-100%',
       color: 'bg-green-500',
       description: 'Strong data support, high historical accuracy, multiple validation sources',
-      example: 'Basmati rice recommendation during optimal monsoon season'
+      example: 'Mustard (Pusa Bold) recommendation during optimal rabi winter season'
     },
     {
       level: 'High',
       range: '80-89%',
       color: 'bg-blue-500',
       description: 'Good data quality, proven track record, some uncertainty factors',
-      example: 'Wheat cultivation with favorable weather forecasts'
+      example: 'Soybean cultivation with favorable kharif rainfall forecasts'
     },
     {
       level: 'Moderate',

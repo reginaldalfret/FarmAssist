@@ -64,36 +64,36 @@ const AccuracyComparison = () => {
       id: 1,
       farmer: 'Rajesh Patel',
       location: 'Gujarat',
-      crop: 'Cotton',
-      improvement: '+35% yield',
-      story: 'Followed AgroYield AI recommendations for pest management and irrigation timing',
+      crop: 'Groundnut',
+      improvement: '+38% yield',
+      story: 'Followed AgroYield AI pest management and irrigation timing for groundnut',
       beforeAfter: {
-        before: '12 quintals/acre',
-        after: '16.2 quintals/acre'
+        before: '14 quintals/acre',
+        after: '19.3 quintals/acre'
       }
     },
     {
       id: 2,
-      farmer: 'Priya Singh',
-      location: 'Punjab',
-      crop: 'Wheat',
-      improvement: '+28% profit',
-      story: 'Used AI-powered market timing recommendations for optimal selling',
+      farmer: 'Sunita Devi',
+      location: 'Rajasthan',
+      crop: 'Mustard',
+      improvement: '+31% profit',
+      story: 'Used AI-powered market timing recommendations for optimal oil seed selling',
       beforeAfter: {
-        before: '₹45,000/acre',
-        after: '₹57,600/acre'
+        before: '₹55,000/acre',
+        after: '₹72,000/acre'
       }
     },
     {
       id: 3,
       farmer: 'Kumar Reddy',
       location: 'Andhra Pradesh',
-      crop: 'Rice',
-      improvement: '+42% water savings',
-      story: 'Implemented precision irrigation based on AI soil moisture predictions',
+      crop: 'Sesame',
+      improvement: '+45% water savings',
+      story: 'Implemented precision drip irrigation based on AI soil moisture predictions',
       beforeAfter: {
-        before: '2,400 liters/kg',
-        after: '1,392 liters/kg'
+        before: '1,800 liters/kg',
+        after: '990 liters/kg'
       }
     }
   ];

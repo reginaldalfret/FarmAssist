@@ -18,7 +18,7 @@ const SoilSpecificGuidance = () => {
       fertility: 'High'
     },
     black: {
-      name: 'Black Cotton Soil',
+      name: 'Black Clayey Soil (Vertisol)',
       icon: 'Circle',
       color: 'text-gray-800',
       bgColor: 'bg-gray-50',
@@ -63,7 +63,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Basal application',
           cost: '₹18,500/ha',
           benefits: ['Balanced nutrition', 'High phosphorus for root development'],
-          crops: ['Wheat', 'Rice', 'Sugarcane']
+          crops: ['Mustard', 'Linseed', 'Soybean']
         },
         {
           rank: 2,
@@ -73,7 +73,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Split application',
           cost: '₹15,200/ha',
           benefits: ['Cost effective', 'Gradual nutrient release'],
-          crops: ['Maize', 'Cotton', 'Soybean']
+          crops: ['Sesame', 'Safflower', 'Soybean']
         },
         {
           rank: 3,
@@ -83,7 +83,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Pre-sowing',
           cost: '₹12,000/ha',
           benefits: ['Soil health improvement', 'Long-term fertility'],
-          crops: ['Vegetables', 'Fruits', 'Organic crops']
+          crops: ['Groundnut', 'Sunflower', 'Castor']
         }
       ]
     },
@@ -97,7 +97,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Pre-monsoon',
           cost: '₹22,000/ha',
           benefits: ['Improves drainage', 'Reduces alkalinity'],
-          crops: ['Cotton', 'Sorghum', 'Sunflower']
+          crops: ['Soybean', 'Safflower', 'Sunflower']
         },
         {
           rank: 2,
@@ -107,7 +107,7 @@ const SoilSpecificGuidance = () => {
           timing: 'With basal fertilizer',
           cost: '₹8,500/ha',
           benefits: ['Corrects zinc deficiency', 'Better crop quality'],
-          crops: ['Rice', 'Wheat', 'Maize']
+          crops: ['Linseed', 'Mustard', 'Sesame']
         },
         {
           rank: 3,
@@ -117,7 +117,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Before planting',
           cost: '₹15,000/ha',
           benefits: ['Improves soil structure', 'Enhances water retention'],
-          crops: ['Vegetables', 'Pulses', 'Oilseeds']
+          crops: ['Groundnut', 'Castor', 'Oilseeds']
         }
       ]
     },
@@ -131,7 +131,7 @@ const SoilSpecificGuidance = () => {
           timing: '2 weeks before sowing',
           cost: '₹19,500/ha',
           benefits: ['Corrects acidity', 'Improves nutrient availability'],
-          crops: ['Groundnut', 'Millets', 'Pulses']
+          crops: ['Groundnut', 'Sesame', 'Castor']
         },
         {
           rank: 2,
@@ -141,7 +141,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Basal application',
           cost: '₹16,800/ha',
           benefits: ['Slow release phosphorus', 'Long-term availability'],
-          crops: ['Coffee', 'Tea', 'Spices']
+          crops: ['Sunflower', 'Linseed', 'Safflower']
         },
         {
           rank: 3,
@@ -151,7 +151,7 @@ const SoilSpecificGuidance = () => {
           timing: 'Pre-monsoon',
           cost: '₹8,000/ha',
           benefits: ['Nitrogen fixation', 'Organic matter addition'],
-          crops: ['Rice', 'Vegetables', 'Cereals']
+          crops: ['Mustard', 'Soybean', 'Oilseeds']
         }
       ]
     },

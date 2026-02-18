@@ -34,53 +34,53 @@ const ClimateAdaptedRankings = () => {
       monsoon: [
         {
           rank: 1,
-          crop: 'Basmati Rice',
+          crop: 'Soybean',
           adaptationScore: 96,
-          expectedYield: '4.8 t/ha',
-          profitability: '₹85,000/ha',
+          expectedYield: '1.8 t/ha',
+          profitability: '₹78,000/ha',
           riskLevel: 'Low',
-          waterRequirement: 'High',
+          waterRequirement: 'Medium',
           climateMatch: 98
         },
         {
           rank: 2,
-          crop: 'Sugarcane',
+          crop: 'Groundnut',
           adaptationScore: 94,
-          expectedYield: '75 t/ha',
-          profitability: '₹1,20,000/ha',
+          expectedYield: '2.1 t/ha',
+          profitability: '₹1,05,000/ha',
           riskLevel: 'Medium',
-          waterRequirement: 'Very High',
+          waterRequirement: 'Low',
           climateMatch: 95
         },
         {
           rank: 3,
-          crop: 'Cotton',
+          crop: 'Sesame',
           adaptationScore: 89,
-          expectedYield: '2.2 t/ha',
-          profitability: '₹65,000/ha',
+          expectedYield: '0.9 t/ha',
+          profitability: '₹95,000/ha',
           riskLevel: 'Medium',
-          waterRequirement: 'Medium',
+          waterRequirement: 'Low',
           climateMatch: 92
         },
         {
           rank: 4,
-          crop: 'Maize',
+          crop: 'Sunflower',
           adaptationScore: 87,
-          expectedYield: '6.5 t/ha',
-          profitability: '₹55,000/ha',
+          expectedYield: '2.2 t/ha',
+          profitability: '₹85,000/ha',
           riskLevel: 'Low',
           waterRequirement: 'Medium',
           climateMatch: 89
         },
         {
           rank: 5,
-          crop: 'Soybean',
-          adaptationScore: 85,
+          crop: 'Castor',
+          adaptationScore: 84,
           expectedYield: '1.8 t/ha',
-          profitability: '₹48,000/ha',
+          profitability: '₹72,000/ha',
           riskLevel: 'Medium',
           waterRequirement: 'Low',
-          climateMatch: 87
+          climateMatch: 86
         }
       ]
     },
@@ -88,53 +88,53 @@ const ClimateAdaptedRankings = () => {
       winter: [
         {
           rank: 1,
-          crop: 'Wheat',
-          adaptationScore: 95,
-          expectedYield: '4.2 t/ha',
-          profitability: '₹72,000/ha',
+          crop: 'Mustard',
+          adaptationScore: 97,
+          expectedYield: '1.9 t/ha',
+          profitability: '₹88,000/ha',
           riskLevel: 'Low',
-          waterRequirement: 'Medium',
-          climateMatch: 97
+          waterRequirement: 'Low',
+          climateMatch: 98
         },
         {
           rank: 2,
-          crop: 'Mustard',
-          adaptationScore: 92,
-          expectedYield: '1.5 t/ha',
-          profitability: '₹58,000/ha',
+          crop: 'Linseed',
+          adaptationScore: 91,
+          expectedYield: '1.1 t/ha',
+          profitability: '₹62,000/ha',
           riskLevel: 'Low',
           waterRequirement: 'Low',
-          climateMatch: 94
+          climateMatch: 93
         },
         {
           rank: 3,
-          crop: 'Chickpea',
-          adaptationScore: 90,
-          expectedYield: '2.1 t/ha',
-          profitability: '₹68,000/ha',
-          riskLevel: 'Medium',
+          crop: 'Safflower',
+          adaptationScore: 88,
+          expectedYield: '1.3 t/ha',
+          profitability: '₹70,000/ha',
+          riskLevel: 'Low',
           waterRequirement: 'Low',
-          climateMatch: 91
+          climateMatch: 90
         },
         {
           rank: 4,
-          crop: 'Barley',
-          adaptationScore: 88,
-          expectedYield: '3.8 t/ha',
-          profitability: '₹52,000/ha',
+          crop: 'Sunflower',
+          adaptationScore: 85,
+          expectedYield: '2.0 t/ha',
+          profitability: '₹80,000/ha',
           riskLevel: 'Low',
-          waterRequirement: 'Low',
-          climateMatch: 89
+          waterRequirement: 'Medium',
+          climateMatch: 87
         },
         {
           rank: 5,
-          crop: 'Peas',
-          adaptationScore: 86,
-          expectedYield: '2.5 t/ha',
-          profitability: '₹62,000/ha',
+          crop: 'Soybean',
+          adaptationScore: 82,
+          expectedYield: '1.5 t/ha',
+          profitability: '₹65,000/ha',
           riskLevel: 'Medium',
           waterRequirement: 'Medium',
-          climateMatch: 88
+          climateMatch: 84
         }
       ]
     }

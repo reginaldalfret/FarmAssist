@@ -10,40 +10,40 @@ const InteractiveSliders = () => {
     sustainability: 10
   });
 
-  const [selectedCrop, setSelectedCrop] = useState('rice');
+  const [selectedCrop, setSelectedCrop] = useState('mustard');
 
   const cropData = {
-    rice: {
-      name: 'Basmati Rice',
-      baseScore: 85,
+    mustard: {
+      name: 'Mustard (Pusa Bold)',
+      baseScore: 91,
       factors: {
-        weather: { score: 90, description: 'Monsoon dependent, high water requirement' },
-        soil: { score: 85, description: 'Prefers well-drained, fertile soil' },
-        market: { score: 95, description: 'Strong export demand, premium pricing' },
-        yield: { score: 80, description: 'Moderate yield, high quality grain' },
-        sustainability: { score: 70, description: 'High water usage, methane emissions' }
+        weather: { score: 88, description: 'Cool dry winters ideal for mustard growth' },
+        soil: { score: 90, description: 'Sandy loam to loam soils of Rajasthan/Punjab' },
+        market: { score: 95, description: 'High edible oil demand, strong MSP support' },
+        yield: { score: 89, description: 'High oil content (42%), reliable yield' },
+        sustainability: { score: 87, description: 'Low water requirement, nitrogen fixing' }
       }
     },
-    wheat: {
-      name: 'Wheat (HD-2967)',
-      baseScore: 82,
+    soybean: {
+      name: 'Soybean (JS 335)',
+      baseScore: 86,
       factors: {
-        weather: { score: 85, description: 'Cool weather crop, drought tolerant' },
-        soil: { score: 90, description: 'Adaptable to various soil types' },
-        market: { score: 80, description: 'Stable demand, government support' },
-        yield: { score: 88, description: 'High yield potential, reliable' },
-        sustainability: { score: 85, description: 'Lower water requirement' }
+        weather: { score: 84, description: 'Kharif crop, medium rainfall requirement' },
+        soil: { score: 88, description: 'Well-drained black/loamy soils of MP/Maharashtra' },
+        market: { score: 85, description: 'Dual use: edible oil + protein meal export' },
+        yield: { score: 83, description: 'Consistent 18-22 Q/Ha with good practices' },
+        sustainability: { score: 90, description: 'Nitrogen-fixing legume, improves soil health' }
       }
     },
-    cotton: {
-      name: 'Cotton (Bt Variety)',
-      baseScore: 78,
+    sunflower: {
+      name: 'Sunflower (KBSH 44)',
+      baseScore: 83,
       factors: {
-        weather: { score: 75, description: 'Heat tolerant, moderate water need' },
-        soil: { score: 80, description: 'Black cotton soil preferred' },
-        market: { score: 85, description: 'Textile industry demand' },
-        yield: { score: 82, description: 'Good fiber quality and yield' },
-        sustainability: { score: 65, description: 'Pesticide usage concerns' }
+        weather: { score: 80, description: 'Adaptable, grows across rabi and kharif seasons' },
+        soil: { score: 82, description: 'Well-drained deep soils, pH 6.0-8.0' },
+        market: { score: 87, description: 'Premium edible oil, high consumer demand' },
+        yield: { score: 85, description: 'High oil extraction rate ~40-42%' },
+        sustainability: { score: 78, description: 'Moderate water use, drought tolerant' }
       }
     }
   };

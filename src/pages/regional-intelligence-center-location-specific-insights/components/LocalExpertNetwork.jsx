@@ -35,7 +35,7 @@ const LocalExpertNetwork = () => {
       organization: 'Punjab Agricultural University',
       location: 'Ludhiana, Punjab',
       experience: '15 years',
-      specialization: ['Wheat Production', 'Integrated Pest Management', 'Soil Health'],
+      specialization: ['Mustard & Rapeseed Production', 'Oilseed IPM', 'Soil Health'],
       rating: 4.9,
       consultations: 2450,
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
@@ -49,12 +49,12 @@ const LocalExpertNetwork = () => {
       availability: 'Mon-Fri, 9 AM - 5 PM',
       consultationFee: 'Free',
       verified: true,
-      testimonial: `Dr. Singh's guidance on wheat variety selection and nutrient management helped me increase my yield by 35%. His practical approach combines scientific knowledge with field experience.`
+      testimonial: `Dr. Singh's guidance on mustard variety selection and nutrient management helped me increase my oilseed yield by 38%. His practical approach combines scientific knowledge with field experience.`
     },
     {
       id: 2,
       name: 'Priya Sharma',category: 'successful-farmers',region: 'haryana',designation: 'Progressive Farmer & Mentor',organization: 'Haryana Farmers Association',location: 'Karnal, Haryana',experience: '12 years',
-      specialization: ['Rice Cultivation', 'Water Management', 'Organic Farming'],
+      specialization: ['Soybean Cultivation', 'Water Management', 'Organic Oilseed Farming'],
       rating: 4.8,
       consultations: 1850,
       avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
@@ -95,18 +95,21 @@ const LocalExpertNetwork = () => {
     {
       id: 4,
       name: 'Amit Patel',category: 'consultants',region: 'gujarat',designation: 'Agricultural Consultant',organization: 'Gujarat Agri Solutions',location: 'Ahmedabad, Gujarat',experience: '10 years',
-      specialization: ['Cotton Farming', 'Drip Irrigation', 'Market Linkage'],
+      specialization: ['Groundnut Farming', 'Drip Irrigation', 'Oilseed Market Linkage'],
       rating: 4.7,
       consultations: 1650,
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
       contact: {
-        phone: '+91-97234-56789',email: 'amit.patel@gujaratagri.com',whatsapp: '+91-97234-56789'
+        phone: '+91-97234-56789',
+        email: 'amit.patel@gujaratagri.com',
+        whatsapp: '+91-97234-56789'
       },
       languages: ['Gujarati', 'Hindi', 'English'],
       achievements: ['Certified Crop Advisor', 'Best Consultant Award 2023'],
-      availability: 'Mon-Sat, 8 AM - 6 PM',consultationFee: '₹800/hour',
+      availability: 'Mon-Sat, 8 AM - 6 PM',
+      consultationFee: '₹800/hour',
       verified: true,
-      testimonial: `Amit's expertise in cotton cultivation and market connections helped me achieve premium prices for my produce. His holistic approach is commendable.`
+      testimonial: `Amit's expertise in groundnut cultivation and oil market connections helped me achieve premium cold-pressed oil prices for my produce. His holistic approach is commendable.`
     },
     {
       id: 5,

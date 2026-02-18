@@ -34,44 +34,44 @@ const AlgorithmInAction = () => {
   const cropRankings = [
     {
       id: 1,
-      name: 'Basmati Rice',
+      name: 'Mustard (Pusa Bold)',
       currentRank: 1,
       previousRank: 3,
       score: 94.2,
       change: '+2',
       factors: {
-        weather: 'Favorable monsoon forecast',
-        market: 'Export demand surge',
-        soil: 'Optimal pH levels',
-        yield: 'High success rate in region'
+        weather: 'Optimal cool-dry winter forecast',
+        market: 'Edible oil import prices rising',
+        soil: 'Perfect sandy-loam pH levels',
+        yield: 'High success rate in Rajasthan/Haryana'
       }
     },
     {
       id: 2,
-      name: 'Wheat (HD-2967)',
+      name: 'Soybean (JS 335)',
       currentRank: 2,
       previousRank: 1,
       score: 91.8,
       change: '-1',
       factors: {
-        weather: 'Temperature concerns',
-        market: 'Stable pricing',
-        soil: 'Good nutrient levels',
-        yield: 'Consistent performance'
+        weather: 'Good kharif rainfall predicted',
+        market: 'Protein meal export demand stable',
+        soil: 'Excellent black soil nutrient levels',
+        yield: 'Consistent performance in MP/Maharashtra'
       }
     },
     {
       id: 3,
-      name: 'Sugarcane',
+      name: 'Groundnut (TAG 24)',
       currentRank: 3,
-      previousRank: 2,
+      previousRank: 4,
       score: 89.5,
-      change: '-1',
+      change: '+1',
       factors: {
-        weather: 'Water availability',
-        market: 'Processing capacity',
-        soil: 'Drainage requirements',
-        yield: 'Long-term investment'
+        weather: 'Sandy soil moisture optimized',
+        market: 'Cold-pressed oil premium demand rising',
+        soil: 'Sandy loam drainage ideal in Gujarat',
+        yield: '18-21 Q/Ha achievable this season'
       }
     }
   ];
