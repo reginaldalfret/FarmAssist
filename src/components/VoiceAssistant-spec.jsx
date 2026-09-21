@@ -814,7 +814,11 @@ CREATE: src/services/supabaseService.js
 // Uses VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY from .env
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://demo.supabase.co';
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || 'demo_key';
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+if (!SUPABASE_ANON_KEY) {
+  console.warn('VITE_SUPABASE_ANON_KEY is not set; Supabase requests will fail.');
+}
 
 const supabaseHeaders = {
   'apikey': SUPABASE_ANON_KEY,
@@ -859,9 +863,9 @@ export const farmerService = {
 // CROP RANKINGS
 export const cropRankingService = {
   getRankings: async (season = 'kharif', region = 'all') => {
-    let query = `crop_rankings?select=*&season=eq.${season}&order=ai_score.desc`;
-    if (region !== 'all') query += `&region=eq.${region}`;
-    const data = await supabaseFetch(query);
+    let endpoint = 'crop_rankings?select=*&order=ai_score.desc&season=eq.' + encodeURIComponent(season);
+    if (region !== 'all') endpoint += '&region=eq.' + encodeURIComponent(region);
+    const data = await supabaseFetch(endpoint);
     return data || getFallbackCropRankings();
   },
   getRankingHistory: async (cropName, days = 30) => {
