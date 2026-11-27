@@ -221,7 +221,7 @@ const GovernmentSchemeIntegration = () => {
             <label className="text-sm font-medium text-gray-700 mb-2 block">State/Region</label>
             <div className="flex flex-wrap gap-2">
               {states?.map((state) => (
-                <button
+                <button type="button"
                   key={state?.id}
                   onClick={() => setSelectedState(state?.id)}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -240,7 +240,7 @@ const GovernmentSchemeIntegration = () => {
             <label className="text-sm font-medium text-gray-700 mb-2 block">Scheme Category</label>
             <div className="flex flex-wrap gap-2">
               {categories?.map((category) => (
-                <button
+                <button type="button"
                   key={category?.id}
                   onClick={() => setSelectedCategory(category?.id)}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -386,11 +386,11 @@ const GovernmentSchemeIntegration = () => {
 
                     {/* Action Buttons */}
                     <div className="flex space-x-2 pt-2">
-                      <button className="flex-1 flex items-center justify-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
+                      <button type="button" className="flex-1 flex items-center justify-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
                         <Icon name="ExternalLink" size={14} />
                         <span>Apply Online</span>
                       </button>
-                      <button className="flex items-center justify-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors">
+                      <button type="button" className="flex items-center justify-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm hover:bg-gray-200 transition-colors">
                         <Icon name="Download" size={14} />
                         <span>Download Form</span>
                       </button>
