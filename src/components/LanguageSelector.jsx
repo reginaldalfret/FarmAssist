@@ -17,7 +17,7 @@ const LanguageSelector = ({ variant = 'header' }) => {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button
+      <button type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium 
           text-gray-600 hover:text-primary hover:bg-primary/5 transition-all duration-200 
@@ -39,7 +39,7 @@ const LanguageSelector = ({ variant = 'header' }) => {
           </div>
           <div className="max-h-72 overflow-y-auto py-1">
             {LANGUAGES.map((lang) => (
-              <button
+              <button type="button"
                 key={lang.code}
                 onClick={() => { setLanguage(lang.code); setIsOpen(false); }}
                 className={`w-full flex items-center justify-between px-4 py-2.5 text-sm 
