@@ -104,7 +104,7 @@ const ProcessBreakdown = () => {
           <div className="flex justify-between items-center mb-8">
             {processSteps?.map((step, index) => (
               <div key={step?.id} className="flex flex-col items-center flex-1">
-                <button
+                <button type="button"
                   onClick={() => setActiveStep(index)}
                   className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 mb-3 ${
                     activeStep === index
