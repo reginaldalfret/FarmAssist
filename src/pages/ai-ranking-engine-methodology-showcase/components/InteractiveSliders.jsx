@@ -108,7 +108,7 @@ const InteractiveSliders = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Select Crop</h3>
               <div className="grid grid-cols-3 gap-3">
                 {Object.entries(cropData)?.map(([key, crop]) => (
-                  <button
+                  <button type="button"
                     key={key}
                     onClick={() => setSelectedCrop(key)}
                     className={`p-3 rounded-lg border-2 transition-all duration-200 text-sm font-medium ${
@@ -126,7 +126,7 @@ const InteractiveSliders = () => {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-gray-900">Ranking Criteria Weights</h3>
-                <button
+                <button type="button"
                   onClick={() => setCriteria({ weather: 20, soil: 20, market: 20, yield: 20, sustainability: 20 })}
                   className="text-sm text-primary hover:text-primary/80 font-medium"
                 >
