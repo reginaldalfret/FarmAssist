@@ -81,14 +81,14 @@ const FilterPanel = ({
           </div>
           <div className="flex items-center space-x-2">
             {activeFiltersCount > 0 && (
-              <button
+              <button type="button"
                 onClick={onResetFilters}
                 className="text-sm text-red-600 hover:text-red-700 font-medium"
               >
                 Reset All
               </button>
             )}
-            <button
+            <button type="button"
               onClick={onToggleCollapse}
               className="p-2 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100"
             >
@@ -209,7 +209,7 @@ const FilterPanel = ({
                     className="flex items-center space-x-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
                   >
                     <span>{displayValue}</span>
-                    <button
+                    <button type="button"
                       onClick={() => onFilterChange(key, key?.startsWith('min') ? 0 : 'all')}
                       className="hover:text-primary/70"
                     >
