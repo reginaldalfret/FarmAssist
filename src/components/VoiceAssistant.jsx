@@ -261,7 +261,7 @@ const VoiceAssistant = () => {
                 {isListening ? 'Listening...' : isSpeaking ? 'Speaking...' : 'AgroYield Voice'}
               </span>
             </div>
-            <button onClick={() => setShowPanel(false)} className="text-white/80 hover:text-white">
+            <button type="button" onClick={() => setShowPanel(false)} className="text-white/80 hover:text-white">
               <X size={16} />
             </button>
           </div>
@@ -284,7 +284,7 @@ const VoiceAssistant = () => {
               <p className="text-xs text-gray-400 font-medium mb-2">Quick commands:</p>
               <div className="flex flex-wrap gap-1">
                 {['top crops', 'market price', 'go to rankings', 'read page', 'help'].map(cmd => (
-                  <button key={cmd} onClick={() => { setTranscript(cmd); processCommandRef.current(cmd); }}
+                  <button type="button" key={cmd} onClick={() => { setTranscript(cmd); processCommandRef.current(cmd); }}
                     className="px-2 py-1 bg-gray-100 hover:bg-primary/10 hover:text-primary text-gray-600 text-xs rounded-full transition-colors">
                     {cmd}
                   </button>
@@ -303,12 +303,12 @@ const VoiceAssistant = () => {
           </div>
           {/* Action Buttons */}
           <div className="px-4 pb-4 flex gap-2">
-            <button onClick={readCurrentPage} 
+            <button type="button" onClick={readCurrentPage} 
               className="flex-1 flex items-center justify-center space-x-1 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs text-gray-700 transition-colors">
               <BookOpen size={12} />
               <span>Read Page</span>
             </button>
-            <button onClick={stopSpeaking}
+            <button type="button" onClick={stopSpeaking}
               className="flex-1 flex items-center justify-center space-x-1 py-2 bg-gray-100 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs text-gray-700 transition-colors">
               <VolumeX size={12} />
               <span>Stop</span>
@@ -321,7 +321,7 @@ const VoiceAssistant = () => {
       <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end space-y-2">
         {/* Toggle Panel button */}
         {!showPanel && (
-          <button onClick={() => setShowPanel(true)} 
+          <button type="button" onClick={() => setShowPanel(true)} 
             className="w-8 h-8 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
             <ChevronUp size={14} />
           </button>
@@ -337,7 +337,7 @@ const VoiceAssistant = () => {
           {isSpeaking && (
             <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20"></span>
           )}
-          <button
+          <button type="button"
             onClick={toggleListening}
             className={`relative w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all duration-200 ${
               isListening ? 'bg-red-500 hover:bg-red-600 scale-110' : 
@@ -377,7 +377,7 @@ export const SpeakButton = ({ text }) => {
   };
   
   return (
-    <button onClick={speak} 
+    <button type="button" onClick={speak} 
       className="inline-flex items-center justify-center w-6 h-6 rounded-full hover:bg-primary/10 text-primary hover:text-primary/70 transition-colors" 
       title={isSpeaking ? 'Stop reading' : 'Read aloud'}>
       {isSpeaking ? <VolumeX size={14} /> : <Volume2 size={14} />}
