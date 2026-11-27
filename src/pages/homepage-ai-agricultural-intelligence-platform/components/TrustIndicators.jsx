@@ -224,7 +224,7 @@ const TrustIndicators = () => {
           </div>
           
           <div className="mt-8">
-            <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
+            <button type="button" className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
               <Icon name="FileText" size={20} />
               <span>View Research Publications</span>
             </button>
