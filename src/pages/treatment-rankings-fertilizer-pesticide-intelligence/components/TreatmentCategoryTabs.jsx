@@ -6,7 +6,7 @@ const TreatmentCategoryTabs = ({ activeCategory, onCategoryChange, categories })
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-1">
       <div className="flex flex-wrap gap-1">
         {categories?.map((category) => (
-          <button
+          <button type="button"
             key={category?.id}
             onClick={() => onCategoryChange(category?.id)}
             className={`flex items-center space-x-2 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
