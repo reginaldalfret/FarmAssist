@@ -442,6 +442,7 @@ Replace all three with these WORKING anchor tag versions:
 <a 
   href={`https://wa.me/${expert?.contact?.whatsapp?.replace(/[^0-9]/g, '')}`}
   target="_blank"
+                      rel="noopener noreferrer"
   rel="noopener noreferrer"
   className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition-colors"
 >
