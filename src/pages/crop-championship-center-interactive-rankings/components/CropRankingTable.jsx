@@ -78,7 +78,7 @@ const CropRankingTable = ({ crops, selectedSeason, selectedRegion, selectedFarmS
               {selectedCrops?.length}/3 selected for comparison
             </div>
             {selectedCrops?.length > 0 && (
-              <button
+              <button type="button"
                 onClick={() => setSelectedCrops([])}
                 className="text-sm text-primary hover:text-primary/80 font-medium"
               >
@@ -94,7 +94,7 @@ const CropRankingTable = ({ crops, selectedSeason, selectedRegion, selectedFarmS
             <span className="text-sm font-medium text-primary">
               {selectedCrops?.length} crops selected for comparison
             </span>
-            <button className="ml-auto text-sm text-primary hover:text-primary/80 font-medium">
+            <button type="button" className="ml-auto text-sm text-primary hover:text-primary/80 font-medium">
               Compare Now →
             </button>
           </div>
@@ -309,15 +309,15 @@ const CropRankingTable = ({ crops, selectedSeason, selectedRegion, selectedFarmS
             Showing {crops?.length} crops for {selectedSeason} season
           </div>
           <div className="flex items-center space-x-2">
-            <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">
+            <button type="button" className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">
               Previous
             </button>
             <div className="flex space-x-1">
-              <button className="px-3 py-1 text-sm bg-primary text-white rounded">1</button>
-              <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">2</button>
-              <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">3</button>
+              <button type="button" className="px-3 py-1 text-sm bg-primary text-white rounded">1</button>
+              <button type="button" className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">2</button>
+              <button type="button" className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">3</button>
             </div>
-            <button className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">
+            <button type="button" className="px-3 py-1 text-sm text-gray-500 hover:text-gray-700">
               Next
             </button>
           </div>
