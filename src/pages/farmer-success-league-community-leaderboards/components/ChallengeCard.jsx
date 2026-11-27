@@ -139,7 +139,7 @@ const ChallengeCard = ({ challenge }) => {
               </div>
             )}
           </div>
-          <Button
+          <Button type="button"
             variant="default"
             size="sm"
             iconName={hasJoined ? "CheckCircle" : (challenge?.status === 'active' ? "Play" : "Clock")}
