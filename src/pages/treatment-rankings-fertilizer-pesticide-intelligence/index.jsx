@@ -318,7 +318,7 @@ const TreatmentRankingsPage = () => {
             <div className="mb-8">
               <div className="flex flex-wrap gap-2 bg-white rounded-xl shadow-sm border border-gray-200 p-2">
                 {tabItems?.map((tab) => (
-                  <button
+                  <button type="button"
                     key={tab?.id}
                     onClick={() => setActiveTab(tab?.id)}
                     className={`flex items-center space-x-2 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
