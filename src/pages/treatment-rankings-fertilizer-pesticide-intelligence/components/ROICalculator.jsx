@@ -132,7 +132,7 @@ const ROICalculator = () => {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
-        <Button
+        <Button type="button"
           variant="default"
           iconName="Calculator"
           iconPosition="left"
@@ -142,7 +142,7 @@ const ROICalculator = () => {
         >
           Calculate ROI
         </Button>
-        <Button
+        <Button type="button"
           variant="outline"
           iconName="RotateCcw"
           iconPosition="left"
