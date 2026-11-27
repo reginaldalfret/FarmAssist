@@ -174,7 +174,7 @@ const SuccessStories = () => {
 
               {/* Navigation */}
               <div className="flex items-center justify-between">
-                <button
+                <button type="button"
                   onClick={prevStory}
                   className="flex items-center space-x-2 bg-white text-gray-600 px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors duration-200"
                 >
@@ -184,7 +184,7 @@ const SuccessStories = () => {
 
                 <div className="flex space-x-2">
                   {successStories?.map((_, index) => (
-                    <button
+                    <button type="button"
                       key={index}
                       onClick={() => setCurrentStory(index)}
                       className={`w-3 h-3 rounded-full transition-colors duration-200 ${
@@ -194,7 +194,7 @@ const SuccessStories = () => {
                   ))}
                 </div>
 
-                <button
+                <button type="button"
                   onClick={nextStory}
                   className="flex items-center space-x-2 bg-white text-gray-600 px-4 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors duration-200"
                 >
@@ -234,12 +234,12 @@ const SuccessStories = () => {
               Join thousands of farmers who have transformed their lives with AI-powered farming intelligence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2">
+              <button type="button" className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2">
                 <Icon name="Zap" size={20} />
                 <span>Start Your Journey</span>
               </button>
               <Link to="/farmer-success-league-community-leaderboards">
-                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
+                <button type="button" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
                   <Icon name="Users" size={20} />
                   <span>Join Success League</span>
                 </button>
