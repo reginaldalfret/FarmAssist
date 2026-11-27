@@ -305,7 +305,7 @@ const CropChampionshipCenter = () => {
             {/* Comparison CTA */}
             {selectedCrops?.length > 0 && (
               <div className="fixed bottom-6 right-6 z-40">
-                <button
+                <button type="button"
                   onClick={() => setShowComparison(true)}
                   className="bg-primary text-white px-6 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-200 flex items-center space-x-2"
                 >
