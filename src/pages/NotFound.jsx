@@ -25,7 +25,7 @@ const NotFound = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
+          <Button type="button"
             variant="primary"
             icon={<Icon name="ArrowLeft" />}
             iconPosition="left"
@@ -34,7 +34,7 @@ const NotFound = () => {
             Go Back
           </Button>
 
-          <Button
+          <Button type="button"
             variant="outline"
             icon={<Icon name="Home" />}
             iconPosition="left"
