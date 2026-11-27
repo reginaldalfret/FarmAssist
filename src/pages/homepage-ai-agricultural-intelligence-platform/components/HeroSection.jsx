@@ -134,7 +134,7 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button type="button" 
                 variant="default" 
                 size="lg"
                 iconName="TrendingUp"
@@ -145,7 +145,7 @@ const HeroSection = () => {
               </Button>
               
               <Link to="/ai-ranking-engine-methodology-showcase">
-                <Button 
+                <Button type="button" 
                   variant="outline" 
                   size="lg"
                   iconName="Play"
@@ -237,7 +237,7 @@ const HeroSection = () => {
                 {/* Quick Actions */}
                 <div className="mt-6 grid grid-cols-2 gap-3">
                   <Link to="/crop-championship-center-interactive-rankings">
-                    <Button 
+                    <Button type="button" 
                       variant="outline" 
                       size="sm"
                       iconName="BarChart3"
@@ -248,7 +248,7 @@ const HeroSection = () => {
                     </Button>
                   </Link>
                   <Link to="/treatment-rankings-fertilizer-pesticide-intelligence">
-                    <Button 
+                    <Button type="button" 
                       variant="outline" 
                       size="sm"
                       iconName="Beaker"
