@@ -277,7 +277,7 @@ const CropGrowthSimulation = () => {
             <label className="block text-sm font-semibold text-gray-700 mb-3">Select Crop</label>
             <div className="space-y-2">
               {crops.map(crop => (
-                <button
+                <button type="button"
                   key={crop.id}
                   onClick={() => {
                     setSelectedCrop(crop.id);
@@ -300,7 +300,7 @@ const CropGrowthSimulation = () => {
             <label className="block text-sm font-semibold text-gray-700 mb-3">Treatment Type</label>
             <div className="space-y-2">
               {!showComparison && treatments.map(treatment => (
-                <button
+                <button type="button"
                   key={treatment.id}
                   onClick={() => {
                     setSelectedTreatment(treatment.id);
