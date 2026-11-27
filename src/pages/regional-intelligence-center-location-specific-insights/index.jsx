@@ -184,7 +184,7 @@ const RegionalIntelligenceCenter = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex space-x-1 overflow-x-auto py-4">
               {tabs?.map((tab) => (
-                <button
+                <button type="button"
                   key={tab?.id}
                   onClick={() => setActiveTab(tab?.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
@@ -213,7 +213,7 @@ const RegionalIntelligenceCenter = () => {
               <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900">Location Services</h3>
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                  <button type="button" className="flex items-center space-x-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
                     <Icon name="MapPin" size={16} />
                     <span>Use My Location</span>
                   </button>
@@ -255,11 +255,11 @@ const RegionalIntelligenceCenter = () => {
               Join thousands of farmers who are making data-driven decisions with our regional intelligence platform.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="flex items-center space-x-2 px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+              <button type="button" className="flex items-center space-x-2 px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-50 transition-colors">
                 <Icon name="MapPin" size={20} />
                 <span>Find My Region</span>
               </button>
-              <button className="flex items-center space-x-2 px-8 py-3 bg-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors">
+              <button type="button" className="flex items-center space-x-2 px-8 py-3 bg-white/20 text-white rounded-lg font-semibold hover:bg-white/30 transition-colors">
                 <Icon name="Phone" size={20} />
                 <span>Contact Expert</span>
               </button>
