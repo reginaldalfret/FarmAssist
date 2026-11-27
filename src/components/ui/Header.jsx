@@ -161,7 +161,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-3">
             <LanguageSelector />
-            <Button 
+            <Button type="button" 
               variant="outline" 
               size="sm"
               onClick={() => setShowAuthModal(true)}
@@ -169,7 +169,7 @@ const Header = () => {
             >
               Sign In
             </Button>
-            <Button 
+            <Button type="button" 
               variant="default" 
               size="sm"
               iconName="Zap"
@@ -214,7 +214,7 @@ const Header = () => {
               ))}
               
               <div className="pt-4 mt-4 border-t border-gray-200 space-y-2">
-                <Button 
+                <Button type="button" 
                   variant="outline" 
                   fullWidth
                   onClick={() => setShowAuthModal(true)}
@@ -222,7 +222,7 @@ const Header = () => {
                 >
                   Sign In
                 </Button>
-                <Button 
+                <Button type="button" 
                   variant="default" 
                   fullWidth
                   iconName="Zap"
