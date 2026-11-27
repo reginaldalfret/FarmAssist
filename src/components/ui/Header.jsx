@@ -121,7 +121,7 @@ const Header = () => {
             
             {/* More Menu */}
             <div className="relative">
-              <button
+              <button type="button"
                 onClick={toggleMoreMenu}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   secondaryNavItems?.some(item => isActivePath(item?.path))
@@ -186,7 +186,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
+          <button type="button"
             onClick={toggleMobileMenu}
             className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-200"
           >
@@ -260,7 +260,7 @@ const Header = () => {
       {showAuthModal && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
           <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
-            <button onClick={() => setShowAuthModal(false)} 
+            <button type="button" onClick={() => setShowAuthModal(false)} 
               className="absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-600">
               <Icon name="X" size={20} />
             </button>
@@ -282,7 +282,7 @@ const Header = () => {
                 <input type="password" placeholder="Enter your password"
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" />
               </div>
-              <button 
+              <button type="button" 
                 onClick={() => { setShowAuthModal(false); }}
                 className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Sign In
@@ -292,17 +292,17 @@ const Header = () => {
                 <span className="relative bg-white px-3 text-sm text-gray-500">or continue with</span>
               </div>
               <div className="grid grid-cols-2 gap-3">
-                <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+                <button type="button" className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
                   <Icon name="Phone" size={16} className="text-green-600" />
                   <span>OTP Login</span>
                 </button>
-                <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+                <button type="button" className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
                   <Icon name="Mail" size={16} className="text-blue-600" />
                   <span>Google</span>
                 </button>
               </div>
               <p className="text-center text-sm text-gray-500">
-                New farmer? <button className="text-primary font-semibold hover:underline">Create Free Account</button>
+                New farmer? <button type="button" className="text-primary font-semibold hover:underline">Create Free Account</button>
               </p>
             </div>
           </div>
