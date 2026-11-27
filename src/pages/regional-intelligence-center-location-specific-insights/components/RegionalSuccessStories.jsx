@@ -152,7 +152,7 @@ const RegionalSuccessStories = () => {
             <label className="text-sm font-medium text-gray-700 mb-2 block">Category</label>
             <div className="flex flex-wrap gap-2">
               {categories?.map((category) => (
-                <button
+                <button type="button"
                   key={category?.id}
                   onClick={() => setSelectedCategory(category?.id)}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -172,7 +172,7 @@ const RegionalSuccessStories = () => {
             <label className="text-sm font-medium text-gray-700 mb-2 block">Region</label>
             <div className="flex flex-wrap gap-2">
               {regions?.map((region) => (
-                <button
+                <button type="button"
                   key={region?.id}
                   onClick={() => setSelectedRegion(region?.id)}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
