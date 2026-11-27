@@ -150,7 +150,7 @@ const AccuracyComparison = () => {
         {/* Metric Selection */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {Object.entries(comparisonMetrics)?.map(([key, metric]) => (
-            <button
+            <button type="button"
               key={key}
               onClick={() => setSelectedMetric(key)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
