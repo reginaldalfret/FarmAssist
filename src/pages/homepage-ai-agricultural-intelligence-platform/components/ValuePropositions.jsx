@@ -120,12 +120,12 @@ const ValuePropositions = () => {
               Join thousands of farmers who have already transformed their operations with our intelligent ranking system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2">
+              <button type="button" className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center space-x-2">
                 <Icon name="Zap" size={20} />
                 <span>Start Free Assessment</span>
               </button>
               <Link to="/ai-ranking-engine-methodology-showcase">
-                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
+                <button type="button" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
                   <Icon name="Play" size={20} />
                   <span>Watch Demo</span>
                 </button>
