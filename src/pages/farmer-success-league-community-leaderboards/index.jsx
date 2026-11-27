@@ -472,7 +472,7 @@ const FarmerSuccessLeague = () => {
                     <p className="text-gray-600">Real transformations powered by AgroYield AI</p>
                   </div>
                 </div>
-                <Button variant="outline" iconName="Plus" iconPosition="left">
+                <Button type="button" variant="outline" iconName="Plus" iconPosition="left">
                   Share Your Story
                 </Button>
               </div>
@@ -527,10 +527,10 @@ const FarmerSuccessLeague = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Button variant="outline" iconName="Filter" iconPosition="left">
+                  <Button type="button" variant="outline" iconName="Filter" iconPosition="left">
                     Filter
                   </Button>
-                  <Button variant="default" iconName="Plus" iconPosition="left">
+                  <Button type="button" variant="default" iconName="Plus" iconPosition="left">
                     Create Challenge
                   </Button>
                 </div>
