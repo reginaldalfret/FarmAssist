@@ -143,7 +143,7 @@ const ProgressTracker = () => {
           </div>
         </div>
         <div className="flex items-center space-x-2">
-          <button
+          <button type="button"
             onClick={() => setTimeframe('yearly')}
             className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
               timeframe === 'yearly' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -151,7 +151,7 @@ const ProgressTracker = () => {
           >
             Yearly
           </button>
-          <button
+          <button type="button"
             onClick={() => setTimeframe('seasonal')}
             className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
               timeframe === 'seasonal' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -167,7 +167,7 @@ const ProgressTracker = () => {
           const config = getMetricConfig(metric);
           const isSelected = selectedMetric === metric;
           return (
-            <button
+            <button type="button"
               key={metric}
               onClick={() => setSelectedMetric(metric)}
               className={`p-4 rounded-lg border-2 transition-all ${
