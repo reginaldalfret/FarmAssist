@@ -175,7 +175,7 @@ const ClimateAdaptedRankings = () => {
         <div className="flex items-center space-x-4 mb-4">
           <span className="text-sm font-medium text-gray-700">Season:</span>
           <div className="flex space-x-2">
-            <button
+            <button type="button"
               onClick={() => setSelectedSeason('kharif')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 selectedSeason === 'kharif'
@@ -184,7 +184,7 @@ const ClimateAdaptedRankings = () => {
             >
               Kharif
             </button>
-            <button
+            <button type="button"
               onClick={() => setSelectedSeason('rabi')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 selectedSeason === 'rabi' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -198,7 +198,7 @@ const ClimateAdaptedRankings = () => {
         {/* Climate Selection */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {Object.entries(climateData)?.map(([key, climate]) => (
-            <button
+            <button type="button"
               key={key}
               onClick={() => setSelectedClimate(key)}
               className={`p-3 rounded-lg border-2 transition-all duration-200 ${
