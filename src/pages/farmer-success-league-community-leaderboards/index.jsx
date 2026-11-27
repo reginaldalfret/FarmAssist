@@ -288,7 +288,7 @@ const FarmerSuccessLeague = () => {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 lg:space-y-0">
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center space-x-2">
-                    <button
+                    <button type="button"
                       onClick={() => setLeaderboardView('regional')}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                         leaderboardView === 'regional' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -296,7 +296,7 @@ const FarmerSuccessLeague = () => {
                     >
                       Regional
                     </button>
-                    <button
+                    <button type="button"
                       onClick={() => setLeaderboardView('national')}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                         leaderboardView === 'national' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -636,7 +636,7 @@ const FarmerSuccessLeague = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center space-x-1 overflow-x-auto py-4">
               {tabs?.map((tab) => (
-                <button
+                <button type="button"
                   key={tab?.id}
                   onClick={() => setActiveTab(tab?.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all duration-200 ${
