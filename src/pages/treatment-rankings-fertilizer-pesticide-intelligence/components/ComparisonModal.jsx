@@ -33,7 +33,7 @@ const ComparisonModal = ({ isOpen, onClose, treatments, onRemoveTreatment }) => 
               <p className="text-sm text-gray-600">Compare {treatments?.length} treatments side by side</p>
             </div>
           </div>
-          <Button
+          <Button type="button"
             variant="ghost"
             size="sm"
             iconName="X"
@@ -61,7 +61,7 @@ const ComparisonModal = ({ isOpen, onClose, treatments, onRemoveTreatment }) => 
                       <th key={index} className="text-center py-3 px-4 min-w-[200px]">
                         <div className="flex items-center justify-center space-x-2">
                           <span className="font-medium text-gray-900">{treatment?.name}</span>
-                          <Button
+                          <Button type="button"
                             variant="ghost"
                             size="xs"
                             iconName="X"
@@ -193,7 +193,7 @@ const ComparisonModal = ({ isOpen, onClose, treatments, onRemoveTreatment }) => 
           <p className="text-sm text-gray-600">
             Compare up to 4 treatments to make informed decisions
           </p>
-          <Button
+          <Button type="button"
             variant="default"
             onClick={onClose}
           >
