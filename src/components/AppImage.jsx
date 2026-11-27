@@ -9,6 +9,7 @@ function Image({
 
   return (
     <img
+      loading="lazy"
       src={src}
       alt={alt}
       className={className}
