@@ -73,7 +73,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl font-bold text-gray-900">Interactive Regional Map</h3>
           <div className="flex items-center space-x-2">
-            <button
+            <button type="button"
               onClick={() => setMapView('state')}
               className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                 mapView === 'state' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -81,7 +81,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
             >
               State
             </button>
-            <button
+            <button type="button"
               onClick={() => setMapView('district')}
               className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                 mapView === 'district' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -89,7 +89,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
             >
               District
             </button>
-            <button
+            <button type="button"
               onClick={() => setMapView('village')}
               className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                 mapView === 'village' ?'bg-primary text-white' :'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -166,7 +166,7 @@ const RegionalMap = ({ selectedRegion, onRegionSelect }) => {
             ))}
 
             {/* GPS Location Button */}
-            <button className="absolute top-4 right-4 bg-white rounded-lg p-2 shadow-lg border border-gray-200 hover:bg-gray-50 transition-colors">
+            <button type="button" className="absolute top-4 right-4 bg-white rounded-lg p-2 shadow-lg border border-gray-200 hover:bg-gray-50 transition-colors">
               <Icon name="MapPin" size={20} className="text-primary" />
             </button>
           </div>
