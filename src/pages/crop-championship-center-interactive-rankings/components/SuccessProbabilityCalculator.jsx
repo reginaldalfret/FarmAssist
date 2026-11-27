@@ -140,7 +140,7 @@ const SuccessProbabilityCalculator = () => {
               </p>
             </div>
           </div>
-          <Button
+          <Button type="button"
             variant="ghost"
             size="sm"
             iconName={isExpanded ? "ChevronUp" : "ChevronDown"}
@@ -199,7 +199,7 @@ const SuccessProbabilityCalculator = () => {
             <div className="text-sm text-gray-600">
               {canCalculate ? 'Ready to calculate' : 'Please select at least one parameter'}
             </div>
-            <Button
+            <Button type="button"
               variant="default"
               iconName="Zap"
               iconPosition="left"
