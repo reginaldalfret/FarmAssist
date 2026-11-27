@@ -48,7 +48,7 @@ const AIRankingEngineMethodologyShowcase = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
+              <Button type="button" 
                 variant="secondary" 
                 size="lg"
                 iconName="Play"
@@ -57,7 +57,7 @@ const AIRankingEngineMethodologyShowcase = () => {
               >
                 Start Free Assessment
               </Button>
-              <Button 
+              <Button type="button" 
                 variant="outline" 
                 size="lg"
                 iconName="BookOpen"
