@@ -224,7 +224,7 @@ const TrustBuilding = () => {
           </div>
 
           <div className="text-center mt-8">
-            <button className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium">
+            <button type="button" className="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium">
               <span>View All Research Publications</span>
               <Icon name="ExternalLink" size={16} />
             </button>
