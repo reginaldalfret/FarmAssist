@@ -334,7 +334,7 @@ const CropGrowthSimulation = () => {
             <label className="block text-sm font-semibold text-gray-700 mb-3">Controls</label>
             <div className="space-y-3">
               <div className="flex gap-2">
-                <Button
+                <Button type="button"
                   variant={isPlaying ? 'secondary' : 'default'}
                   size="sm"
                   onClick={() => setIsPlaying(!isPlaying)}
@@ -344,7 +344,7 @@ const CropGrowthSimulation = () => {
                 >
                   {isPlaying ? 'Pause' : 'Play'}
                 </Button>
-                <Button
+                <Button type="button"
                   variant="outline"
                   size="sm"
                   onClick={handleReset}
@@ -369,7 +369,7 @@ const CropGrowthSimulation = () => {
                 />
               </div>
 
-              <Button
+              <Button type="button"
                 variant={showComparison ? 'default' : 'outline'}
                 size="sm"
                 onClick={() => {
