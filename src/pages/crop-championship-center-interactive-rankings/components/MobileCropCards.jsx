@@ -45,14 +45,14 @@ const MobileCropCards = ({ crops, onCropSelect, selectedCrops }) => {
       </div>
       <div className="relative">
         {/* Navigation Buttons */}
-        <button
+        <button type="button"
           onClick={prevCard}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2 z-10 w-8 h-8 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary"
         >
           <Icon name="ChevronLeft" size={16} />
         </button>
         
-        <button
+        <button type="button"
           onClick={nextCard}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2 z-10 w-8 h-8 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary"
         >
@@ -78,7 +78,7 @@ const MobileCropCards = ({ crops, onCropSelect, selectedCrops }) => {
             </div>
             <div className="text-right">
               <div className="text-2xl font-bold text-gray-900">#{currentCrop?.rank}</div>
-              <button
+              <button type="button"
                 onClick={() => onCropSelect(currentCrop?.id)}
                 className={`mt-1 w-6 h-6 rounded border-2 flex items-center justify-center ${
                   isSelected 
@@ -184,7 +184,7 @@ const MobileCropCards = ({ crops, onCropSelect, selectedCrops }) => {
         {/* Dots Indicator */}
         <div className="flex justify-center space-x-2 mt-4">
           {crops?.slice(0, 5)?.map((_, index) => (
-            <button
+            <button type="button"
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-200 ${
@@ -201,10 +201,10 @@ const MobileCropCards = ({ crops, onCropSelect, selectedCrops }) => {
       </div>
       {/* Quick Actions */}
       <div className="mt-4 flex space-x-2">
-        <button className="flex-1 px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-medium hover:bg-primary/20 transition-colors">
+        <button type="button" className="flex-1 px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-medium hover:bg-primary/20 transition-colors">
           View Details
         </button>
-        <button className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+        <button type="button" className="flex-1 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
           Compare
         </button>
       </div>
