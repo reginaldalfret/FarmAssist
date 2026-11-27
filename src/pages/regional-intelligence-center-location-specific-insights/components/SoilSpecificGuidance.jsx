@@ -244,7 +244,7 @@ const SoilSpecificGuidance = () => {
         {/* Soil Type Selection */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
           {Object.entries(soilTypes)?.map(([key, soil]) => (
-            <button
+            <button type="button"
               key={key}
               onClick={() => setSelectedSoilType(key)}
               className={`p-4 rounded-lg border-2 transition-all duration-200 text-left ${
