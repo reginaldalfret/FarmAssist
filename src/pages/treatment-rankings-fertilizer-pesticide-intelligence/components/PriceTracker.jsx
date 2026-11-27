@@ -115,7 +115,7 @@ const PriceTracker = () => {
         <label className="block text-sm font-medium text-gray-700 mb-2">Select Treatment</label>
         <div className="flex flex-wrap gap-2">
           {treatmentOptions?.map((option) => (
-            <button
+            <button type="button"
               key={option?.value}
               onClick={() => setSelectedTreatment(option?.value)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
