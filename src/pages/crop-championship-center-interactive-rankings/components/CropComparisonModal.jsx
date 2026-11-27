@@ -46,7 +46,7 @@ const CropComparisonModal = ({ isOpen, onClose, selectedCrops, allCrops }) => {
               </p>
             </div>
           </div>
-          <Button
+          <Button type="button"
             variant="ghost"
             size="sm"
             iconName="X"
@@ -154,10 +154,10 @@ const CropComparisonModal = ({ isOpen, onClose, selectedCrops, allCrops }) => {
                     local market demand before making the final decision.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Button variant="default" size="sm" iconName="Download">
+                    <Button type="button" variant="default" size="sm" iconName="Download">
                       Download Report
                     </Button>
-                    <Button variant="outline" size="sm" iconName="Share">
+                    <Button type="button" variant="outline" size="sm" iconName="Share">
                       Share Comparison
                     </Button>
                   </div>
