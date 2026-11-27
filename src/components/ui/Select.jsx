@@ -139,7 +139,7 @@ const Select = React.forwardRef(({
                         )}
 
                         {clearable && hasValue && !loading && (
-                            <Button
+                            <Button type="button"
                                 variant="ghost"
                                 size="icon"
                                 className="h-4 w-4"
