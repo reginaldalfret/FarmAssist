@@ -70,7 +70,7 @@ const SuccessStoryCard = ({ story }) => {
           <p className="text-gray-600 text-sm leading-relaxed">
             {isExpanded ? story?.fullDescription : `${story?.description?.substring(0, 120)}...`}
           </p>
-          <button
+          <button type="button"
             onClick={() => setIsExpanded(!isExpanded)}
             className="text-primary text-sm font-medium hover:text-primary/80 transition-colors mt-2"
           >
