@@ -295,7 +295,7 @@ const VoiceAssistant = () => {
                 {isListening ? 'Listening...' : isSpeaking ? 'Speaking...' : 'AgroYield Voice'}
               </span>
             </div>
-            <button onClick={() => setShowPanel(false)} className="text-white/80 hover:text-white">
+            <button type="button" onClick={() => setShowPanel(false)} className="text-white/80 hover:text-white">
               <X size={16} />
             </button>
           </div>
@@ -318,7 +318,7 @@ const VoiceAssistant = () => {
               <p className="text-xs text-gray-400 font-medium mb-2">Quick commands:</p>
               <div className="flex flex-wrap gap-1">
                 {['top crops', 'market price', 'go to rankings', 'read page', 'help'].map(cmd => (
-                  <button key={cmd} onClick={() => { setTranscript(cmd); processCommandRef.current(cmd); }}
+                  <button type="button" key={cmd} onClick={() => { setTranscript(cmd); processCommandRef.current(cmd); }}
                     className="px-2 py-1 bg-gray-100 hover:bg-primary/10 hover:text-primary text-gray-600 text-xs rounded-full transition-colors">
                     {cmd}
                   </button>
@@ -337,12 +337,12 @@ const VoiceAssistant = () => {
           </div>
           {/* Action Buttons */}
           <div className="px-4 pb-4 flex gap-2">
-            <button onClick={readCurrentPage} 
+            <button type="button" onClick={readCurrentPage} 
               className="flex-1 flex items-center justify-center space-x-1 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs text-gray-700 transition-colors">
               <BookOpen size={12} />
               <span>Read Page</span>
             </button>
-            <button onClick={stopSpeaking}
+            <button type="button" onClick={stopSpeaking}
               className="flex-1 flex items-center justify-center space-x-1 py-2 bg-gray-100 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs text-gray-700 transition-colors">
               <VolumeX size={12} />
               <span>Stop</span>
@@ -355,7 +355,7 @@ const VoiceAssistant = () => {
       <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end space-y-2">
         {/* Toggle Panel button */}
         {!showPanel && (
-          <button onClick={() => setShowPanel(true)} 
+          <button type="button" onClick={() => setShowPanel(true)} 
             className="w-8 h-8 rounded-full bg-white shadow-md border border-gray-200 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
             <ChevronUp size={14} />
           </button>
@@ -371,7 +371,7 @@ const VoiceAssistant = () => {
           {isSpeaking && (
             <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20"></span>
           )}
-          <button
+          <button type="button"
             onClick={toggleListening}
             className={`relative w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all duration-200 ${
               isListening ? 'bg-red-500 hover:bg-red-600 scale-110' : 
@@ -411,7 +411,7 @@ export const SpeakButton = ({ text }) => {
   };
   
   return (
-    <button onClick={speak} 
+    <button type="button" onClick={speak} 
       className="inline-flex items-center justify-center w-6 h-6 rounded-full hover:bg-primary/10 text-primary hover:text-primary/70 transition-colors" 
       title={isSpeaking ? 'Stop reading' : 'Read aloud'}>
       {isSpeaking ? <VolumeX size={14} /> : <Volume2 size={14} />}
@@ -432,9 +432,9 @@ FILE: src/pages/regional-intelligence-center-location-specific-insights/
 
 Find the three contact buttons that currently look like:
 ```jsx
-<button className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition-colors">
-<button className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors">
-<button className="flex items-center space-x-1 px-3 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
+<button type="button" className="flex items-center space-x-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition-colors">
+<button type="button" className="flex items-center space-x-1 px-3 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors">
+<button type="button" className="flex items-center space-x-1 px-3 py-2 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition-colors">
 ```
 
 Replace all three with these WORKING anchor tag versions:
@@ -583,7 +583,7 @@ Add this Auth Modal at the END of the Header JSX return (before closing div):
           <input type="password" placeholder="Enter your password"
             className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" />
         </div>
-        <button 
+        <button type="button" 
           onClick={() => { setShowAuthModal(false); }}
           className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
           Sign In
@@ -593,20 +593,20 @@ Add this Auth Modal at the END of the Header JSX return (before closing div):
           <span className="relative bg-white px-3 text-sm text-gray-500">or continue with</span>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+          <button type="button" className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
             <Icon name="Phone" size={16} className="text-green-600" />
             <span>OTP Login</span>
           </button>
-          <button className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+          <button type="button" className="flex items-center justify-center space-x-2 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
             <Icon name="Chrome" size={16} className="text-blue-600" />
             <span>Google</span>
           </button>
         </div>
         <p className="text-center text-sm text-gray-500">
-          New farmer? <button className="text-primary font-semibold hover:underline">Create Free Account</button>
+          New farmer? <button type="button" className="text-primary font-semibold hover:underline">Create Free Account</button>
         </p>
       </div>
-      <button onClick={() => setShowAuthModal(false)} 
+      <button type="button" onClick={() => setShowAuthModal(false)} 
         className="absolute top-4 right-4 text-white/80 hover:text-white">
         <Icon name="X" size={20} />
       </button>
@@ -1324,7 +1324,7 @@ const AICropAdvisor = () => {
 
   if (!isOpen) {
     return (
-      <button onClick={() => setIsOpen(true)}
+      <button type="button" onClick={() => setIsOpen(true)}
         className="fixed bottom-24 left-6 z-[9998] bg-gradient-to-r from-primary to-secondary text-white px-4 py-3 rounded-2xl shadow-xl flex items-center space-x-2 hover:shadow-2xl transition-all duration-200 hover:scale-105">
         <Bot size={20} />
         <span className="text-sm font-semibold">AI Crop Advisor</span>
@@ -1348,8 +1348,8 @@ const AICropAdvisor = () => {
           </div>
         </div>
         <div className="flex items-center space-x-2">
-          <button onClick={() => setIsMinimized(!isMinimized)} className="text-white/80 hover:text-white"><Minimize2 size={16} /></button>
-          <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white"><X size={16} /></button>
+          <button type="button" onClick={() => setIsMinimized(!isMinimized)} className="text-white/80 hover:text-white"><Minimize2 size={16} /></button>
+          <button type="button" onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white"><X size={16} /></button>
         </div>
       </div>
 
@@ -1387,7 +1387,7 @@ const AICropAdvisor = () => {
                   className="w-full text-xs border border-gray-200 rounded-lg p-1.5 mb-2">
                   {['alluvial','black','red','sandy','laterite','clayey','loamy'].map(s => <option key={s} value={s}>{s.charAt(0).toUpperCase()+s.slice(1)}</option>)}
                 </select>
-                <button onClick={runMLPrediction} className="w-full bg-primary text-white text-xs py-2 rounded-lg font-semibold">
+                <button type="button" onClick={runMLPrediction} className="w-full bg-primary text-white text-xs py-2 rounded-lg font-semibold">
                   🤖 Run ML Prediction
                 </button>
               </div>
@@ -1399,7 +1399,7 @@ const AICropAdvisor = () => {
           <div className="px-3 pb-2">
             <div className="flex space-x-1 overflow-x-auto pb-1">
               {QUICK_QUESTIONS.map((q, i) => (
-                <button key={i} onClick={() => handleSend(q)}
+                <button type="button" key={i} onClick={() => handleSend(q)}
                   className="flex-shrink-0 text-xs px-2 py-1 bg-primary/10 text-primary rounded-full hover:bg-primary/20 transition-colors">
                   {q.length > 25 ? q.slice(0,25)+'...' : q}
                 </button>
@@ -1413,7 +1413,7 @@ const AICropAdvisor = () => {
               onKeyPress={e => e.key === 'Enter' && handleSend()}
               placeholder="Ask about crops, yield, prices..."
               className="flex-1 text-sm border border-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary" />
-            <button onClick={() => handleSend()}
+            <button type="button" onClick={() => handleSend()}
               className="bg-primary text-white p-2 rounded-xl hover:bg-primary/90 transition-colors disabled:opacity-50"
               disabled={!input.trim() || isLoading}>
               <Send size={16} />
@@ -1522,7 +1522,7 @@ const LiveMarketPrices = ({ compact = false }) => {
             <Clock size={12} />
             <span>{lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
           </div>
-          <button onClick={refreshPrices} className="text-white/80 hover:text-white transition-colors">
+          <button type="button" onClick={refreshPrices} className="text-white/80 hover:text-white transition-colors">
             <RefreshCw size={16} className={isRefreshing ? 'animate-spin' : ''} />
           </button>
         </div>
@@ -1623,7 +1623,7 @@ const CropCalendar = () => {
           {Object.keys(CROP_CALENDAR).map(crop => {
             const info = CROP_CALENDAR[crop];
             return (
-              <button key={crop} onClick={() => setSelectedCrop(crop)}
+              <button type="button" key={crop} onClick={() => setSelectedCrop(crop)}
                 className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                   selectedCrop === crop ? 'bg-primary text-white shadow-md scale-105' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}>
@@ -2092,7 +2092,7 @@ const getAIAdvice = async () => {
 };
 
 // Add button in card:
-<button onClick={getAIAdvice}
+<button type="button" onClick={getAIAdvice}
   className="flex items-center space-x-1 px-3 py-1.5 bg-gradient-to-r from-purple-500 to-primary text-white rounded-lg text-xs font-medium hover:opacity-90 transition-opacity">
   <span>🤖</span>
   <span>{loadingAdvice ? 'Getting AI advice...' : 'AI Advice'}</span>
