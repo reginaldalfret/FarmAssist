@@ -117,7 +117,7 @@ const AlgorithmInAction = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Select Scenario</h3>
               <div className="space-y-3">
                 {scenarios?.map(scenario => (
-                  <button
+                  <button type="button"
                     key={scenario?.id}
                     onClick={() => setSelectedScenario(scenario?.id)}
                     className={`w-full flex items-center space-x-3 p-4 rounded-lg border-2 transition-all duration-200 ${
