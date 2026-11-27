@@ -35,7 +35,7 @@ class ErrorBoundary extends React.Component {
               <p className="text-neutral-600 text-base w w-8/12 mx-auto">We encountered an unexpected error while processing your request.</p>
             </div>
             <div className="flex justify-center items-center mt-6">
-              <button
+              <button type="button"
                 onClick={() => {
                   window.location.href = "/";
                 }}
