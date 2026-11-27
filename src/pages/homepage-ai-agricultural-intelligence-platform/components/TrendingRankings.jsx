@@ -148,7 +148,7 @@ const TrendingRankings = () => {
             <label className="block text-sm font-medium text-gray-700 mb-3">Season</label>
             <div className="grid grid-cols-3 gap-2">
               {seasons?.map((season) => (
-                <button
+                <button type="button"
                   key={season?.id}
                   onClick={() => setSelectedSeason(season?.id)}
                   className={`p-3 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -169,7 +169,7 @@ const TrendingRankings = () => {
             <label className="block text-sm font-medium text-gray-700 mb-3">Region</label>
             <div className="grid grid-cols-2 lg:grid-cols-5 gap-2">
               {regions?.map((region) => (
-                <button
+                <button type="button"
                   key={region?.id}
                   onClick={() => setSelectedRegion(region?.id)}
                   className={`p-3 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-center space-x-2 ${
@@ -260,7 +260,7 @@ const TrendingRankings = () => {
 
               {/* Action */}
               <Link to="/crop-championship-center-interactive-rankings">
-                <button className="w-full bg-primary/5 text-primary py-2 rounded-lg font-medium hover:bg-primary/10 transition-colors duration-200 flex items-center justify-center space-x-2 group-hover:bg-primary group-hover:text-white">
+                <button type="button" className="w-full bg-primary/5 text-primary py-2 rounded-lg font-medium hover:bg-primary/10 transition-colors duration-200 flex items-center justify-center space-x-2 group-hover:bg-primary group-hover:text-white">
                   <span>View Detailed Analysis</span>
                   <Icon name="ArrowRight" size={16} />
                 </button>
@@ -279,12 +279,12 @@ const TrendingRankings = () => {
               Get customized crop recommendations based on your specific soil, climate, and market conditions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center space-x-2">
+              <button type="button" className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center space-x-2">
                 <Icon name="Target" size={20} />
                 <span>Get Personal Rankings</span>
               </button>
               <Link to="/crop-championship-center-interactive-rankings">
-                <button className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
+                <button type="button" className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
                   <Icon name="BarChart3" size={20} />
                   <span>Explore All Rankings</span>
                 </button>
