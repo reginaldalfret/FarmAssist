@@ -155,7 +155,7 @@ const RegionalLeaderboard = () => {
         {/* Region Selector */}
         <div className="flex flex-wrap gap-2">
           {regions?.map((region) => (
-            <button
+            <button type="button"
               key={region}
               onClick={() => setSelectedRegion(region)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -292,7 +292,7 @@ const RegionalLeaderboard = () => {
                 Follow top-ranked crops and connect with successful farmers in {currentData?.name}
               </p>
             </div>
-            <button className="ml-auto px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
+            <button type="button" className="ml-auto px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
               View Success Stories
             </button>
           </div>
