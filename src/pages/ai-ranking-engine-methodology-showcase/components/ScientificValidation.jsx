@@ -132,7 +132,7 @@ const ScientificValidation = () => {
             <div key={partnership?.id} className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
               <div className="grid lg:grid-cols-3 gap-8 items-center">
                 <div className="flex items-center space-x-4">
-                  <Image
+                  <Image decoding="async"
                     src={partnership?.logo}
                     alt={partnership?.name}
                     className="w-16 h-16 rounded-full object-cover"
