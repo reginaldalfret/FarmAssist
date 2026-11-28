@@ -102,7 +102,7 @@ const TreatmentRankingCard = ({ treatment, rank, onCompare, onViewDetails }) => 
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-2">
-          <Button
+          <Button type="button"
             variant="default"
             size="sm"
             iconName="Eye"
@@ -112,7 +112,7 @@ const TreatmentRankingCard = ({ treatment, rank, onCompare, onViewDetails }) => 
           >
             View Details
           </Button>
-          <Button
+          <Button type="button"
             variant="outline"
             size="sm"
             iconName="GitCompare"
