@@ -194,7 +194,7 @@ const RegionalSuccessStories = () => {
               {/* Header */}
               <div className="p-4 border-b border-gray-200">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Image
+                  <Image decoding="async"
                     src={story?.avatar}
                     alt={story?.farmerName}
                     className="w-12 h-12 rounded-full object-cover"
@@ -221,7 +221,7 @@ const RegionalSuccessStories = () => {
 
               {/* Farm Image */}
               <div className="relative h-48 overflow-hidden">
-                <Image
+                <Image decoding="async"
                   src={story?.farmImage}
                   alt={`${story?.farmerName}'s farm`}
                   className="w-full h-full object-cover"
