@@ -235,7 +235,7 @@ const LocalExpertNetwork = () => {
               {/* Header */}
               <div className="p-4 border-b border-gray-200">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Image
+                  <Image decoding="async"
                     src={expert?.avatar}
                     alt={expert?.name}
                     className="w-16 h-16 rounded-full object-cover"
