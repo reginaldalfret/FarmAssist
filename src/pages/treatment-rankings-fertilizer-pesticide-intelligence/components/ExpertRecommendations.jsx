@@ -134,7 +134,7 @@ const ExpertRecommendations = () => {
             <div key={item?.id} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-200">
               {/* Expert Info */}
               <div className="flex items-start space-x-4 mb-4">
-                <Image
+                <Image decoding="async"
                   src={item?.expert?.avatar}
                   alt={item?.expert?.name}
                   className="w-16 h-16 rounded-full object-cover"
@@ -205,7 +205,7 @@ const ExpertRecommendations = () => {
             <div key={testimonial?.id} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-200">
               {/* Farmer Info */}
               <div className="flex items-start space-x-4 mb-4">
-                <Image
+                <Image decoding="async"
                   src={testimonial?.farmer?.avatar}
                   alt={testimonial?.farmer?.name}
                   className="w-12 h-12 rounded-full object-cover"
