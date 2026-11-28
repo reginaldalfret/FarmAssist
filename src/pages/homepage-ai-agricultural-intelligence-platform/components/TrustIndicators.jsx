@@ -124,7 +124,7 @@ const TrustIndicators = () => {
             {partnerships?.map((partner, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover-lift transition-all duration-300">
                 <div className="mb-4">
-                  <Image 
+                  <Image decoding="async" 
                     src={partner?.logo}
                     alt={partner?.name}
                     className="w-full h-16 object-cover rounded-lg"
@@ -147,7 +147,7 @@ const TrustIndicators = () => {
             {expertEndorsements?.map((expert, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover-lift transition-all duration-300">
                 <div className="flex items-center space-x-4 mb-4">
-                  <Image 
+                  <Image decoding="async" 
                     src={expert?.avatar}
                     alt={expert?.name}
                     className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
