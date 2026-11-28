@@ -91,7 +91,7 @@ const SuccessStories = () => {
               {/* Farmer Profile */}
               <div className="flex items-center space-x-4">
                 <div className="relative">
-                  <Image 
+                  <Image decoding="async" 
                     src={currentData?.avatar}
                     alt={currentData?.name}
                     className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-lg"
