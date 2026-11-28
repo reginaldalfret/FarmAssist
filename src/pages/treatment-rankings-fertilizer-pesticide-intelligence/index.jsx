@@ -378,7 +378,7 @@ const TreatmentRankingsPage = () => {
                           {comparisonTreatments?.length} treatment(s) selected for comparison
                         </span>
                       </div>
-                      <Button
+                      <Button type="button"
                         variant="default"
                         size="sm"
                         iconName="Eye"
@@ -451,7 +451,7 @@ const TreatmentRankingsPage = () => {
               Start making data-driven decisions today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <Button type="button"
                 variant="default"
                 size="lg"
                 iconName="Target"
@@ -460,7 +460,7 @@ const TreatmentRankingsPage = () => {
               >
                 Get Personalized Recommendations
               </Button>
-              <Button
+              <Button type="button"
                 variant="outline"
                 size="lg"
                 iconName="Phone"
