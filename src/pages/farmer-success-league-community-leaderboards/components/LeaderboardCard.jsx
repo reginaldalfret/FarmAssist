@@ -56,7 +56,7 @@ const LeaderboardCard = ({ farmer, rank, category = 'overall' }) => {
       </div>
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <Image
+          <Image decoding="async"
             src={farmer?.avatar}
             alt={`${farmer?.name} profile`}
             className="w-10 h-10 rounded-full object-cover"
