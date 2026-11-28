@@ -16,7 +16,7 @@ const SuccessStoryCard = ({ story }) => {
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300">
       <div className="relative h-48 overflow-hidden">
-        <Image
+        <Image decoding="async"
           src={story?.image}
           alt={`${story?.farmerName}'s success story`}
           className="w-full h-full object-cover"
@@ -36,7 +36,7 @@ const SuccessStoryCard = ({ story }) => {
       </div>
       <div className="p-6">
         <div className="flex items-center space-x-3 mb-4">
-          <Image
+          <Image decoding="async"
             src={story?.farmerAvatar}
             alt={`${story?.farmerName} profile`}
             className="w-12 h-12 rounded-full object-cover"
