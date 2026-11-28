@@ -195,7 +195,7 @@ const PriceTracker = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <Button
+                <Button type="button"
                   variant="outline"
                   size="sm"
                   iconName="ExternalLink"
@@ -217,7 +217,7 @@ const PriceTracker = () => {
         </div>
         <p className="text-sm text-yellow-700">
           Set up price alerts to get notified when prices drop below your target. 
-          <Button variant="link" size="sm" className="text-yellow-700 underline p-0 ml-1">
+          <Button type="button" variant="link" size="sm" className="text-yellow-700 underline p-0 ml-1">
             Set Alert
           </Button>
         </p>
