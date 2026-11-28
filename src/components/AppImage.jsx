@@ -9,6 +9,7 @@ function Image({
 
   return (
     <img
+      decoding="async"
       loading="lazy"
       src={src}
       alt={alt}
