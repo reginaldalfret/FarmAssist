@@ -497,7 +497,7 @@ Replace the Join Challenge button with:
     <span className="text-sm text-green-700 font-medium">Successfully joined! Track progress in your dashboard.</span>
   </div>
 )}
-<Button
+<Button type="button"
   variant="default"
   size="sm"
   iconName={hasJoined ? "CheckCircle" : (challenge?.status === 'active' ? "Play" : "Clock")}
@@ -530,7 +530,7 @@ const [showAssessmentToast, setShowAssessmentToast] = useState(false);
 
 Replace both "Sign In" Buttons (desktop + mobile) with:
 ```jsx
-<Button 
+<Button type="button" 
   variant="outline" 
   size="sm"
   onClick={() => setShowAuthModal(true)}
@@ -542,7 +542,7 @@ Replace both "Sign In" Buttons (desktop + mobile) with:
 
 Replace both "Get Free Assessment" Buttons with:
 ```jsx
-<Button 
+<Button type="button" 
   variant="default" 
   size="sm"
   iconName="Zap"
